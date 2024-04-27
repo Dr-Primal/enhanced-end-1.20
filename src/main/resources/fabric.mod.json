@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enhanced_end",
+	"version": "${version}",
+	"name": "Enhanced End",
+	"description": "Adds Enhancements to the End Dimension to spice up your world in a vanilla friendly way!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/enhanced_end/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.primal.enhanced_end.EnhancedEnd"
+		],
+		"client": [
+			"net.primal.enhanced_end.EnhancedEndClient"
+		],
+		"fabric-datagen": [
+			"net.primal.enhanced_end.EnhancedEndDataGenerator"
+		]
+	},
+	"mixins": [
+		"enhanced_end.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
