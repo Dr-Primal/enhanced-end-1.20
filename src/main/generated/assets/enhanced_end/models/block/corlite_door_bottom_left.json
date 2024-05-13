@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "enhanced_end:block/corlite_door_bottom",
+    "top": "enhanced_end:block/corlite_door_top"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_midnight_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_end:midnight_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:midnight_button_from_midnight_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_midnight_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:midnight_button_from_midnight_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

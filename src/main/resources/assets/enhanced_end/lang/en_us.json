@@ -1,0 +1,240 @@
+{
+  "block.enhanced_end.midnight_stem": "Midnight Stem",
+  "block.enhanced_end.midnight_hyphae": "Midnight Hyphae",
+  "block.enhanced_end.stripped_midnight_stem": "Stripped Midnight Stem",
+  "block.enhanced_end.stripped_midnight_hyphae": "Stripped Midnight Hyphae",
+  "block.enhanced_end.midnight_planks": "Midnight Planks",
+  "block.enhanced_end.midnight_stairs": "Midnight Stairs",
+  "block.enhanced_end.midnight_slab": "Midnight Slab",
+  "block.enhanced_end.midnight_button": "Midnight Button",
+  "block.enhanced_end.midnight_pressure_plate": "Midnight Pressure Plate",
+  "block.enhanced_end.midnight_fence": "Midnight Fence",
+  "block.enhanced_end.midnight_fence_gate": "Midnight Fence Gate",
+  "block.enhanced_end.midnight_door": "Midnight Door",
+  "block.enhanced_end.midnight_trapdoor": "Midnight Trapdoor",
+  "block.enhanced_end.midnight_standing_sign": "Midnight Sign",
+  "block.enhanced_end.midnight_wall_sign": "Midnight Sign",
+  "block.enhanced_end.midnight_hanging_sign": "Midnight Hanging Sign",
+  "block.enhanced_end.hanging_midnight_wall_sign": "Midnight Hanging Sign",
+
+  "block.enhanced_end.corlite_stem": "Corlite Stem",
+  "block.enhanced_end.corlite_hyphae": "Corlite Hyphae",
+  "block.enhanced_end.stripped_corlite_stem": "Stripped Corlite Stem",
+  "block.enhanced_end.stripped_corlite_hyphae": "Stripped Corlite Hyphae",
+  "block.enhanced_end.corlite_planks": "Corlite Planks",
+  "block.enhanced_end.corlite_stairs": "Corlite Stairs",
+  "block.enhanced_end.corlite_slab": "Corlite Slab",
+  "block.enhanced_end.corlite_button": "Corlite Button",
+  "block.enhanced_end.corlite_pressure_plate": "Corlite Pressure Plate",
+  "block.enhanced_end.corlite_fence": "Corlite Fence",
+  "block.enhanced_end.corlite_fence_gate": "Corlite Fence Gate",
+  "block.enhanced_end.corlite_door": "Corlite Door",
+  "block.enhanced_end.corlite_trapdoor": "Corlite Trapdoor",
+  "block.enhanced_end.corlite_standing_sign": "Corlite Sign",
+  "block.enhanced_end.corlite_wall_sign": "Corlite Sign",
+  "block.enhanced_end.corlite_hanging_sign": "Corlite Hanging Sign",
+  "block.enhanced_end.hanging_corlite_wall_sign": "Corlite Hanging Sign",
+
+  "item.enhanced_end.tanzanite": "Tanzanite",
+  "item.enhanced_end.raw_tanzanite": "Raw Tanzanite",
+  "item.enhanced_end.clitanium": "Clitanium",
+  "item.enhanced_end.endimintium_scrap": "Endimintium Scrap",
+  "item.enhanced_end.endimintium_ingot": "Endimintium Ingot",
+  "item.enhanced_end.diamond_fragment": "Diamond Fragment",
+  "item.enhanced_end.ender_matter_bucket": "Ender Matter in a Bucket",
+
+  "item.enhanced_end.endimintium_bow": "Endimintium Bow",
+  "item.enhanced_end.endimintium_crossbow": "Endimintium Crossbow(WIP)",
+  "item.enhanced_end.endimintium_sword": "Endimintium Sword",
+  "item.enhanced_end.endimintium_axe": "Endimintium Axe",
+  "item.enhanced_end.endimintium_pickaxe": "Endimintium Pickaxe",
+  "item.enhanced_end.endimintium_shovel": "Endimintium Shovel",
+  "item.enhanced_end.endimintium_hoe": "Endimintium Hoe",
+
+  "item.enhanced_end.endimintium_helmet": "Endimintium Helmet",
+  "item.enhanced_end.endimintium_chestplate": "Endimintium Chestplate",
+  "item.enhanced_end.endimintium_leggings": "Endimintium Leggings",
+  "item.enhanced_end.endimintium_boots": "Endimintium Boots",
+
+  "item.enhanced_end.clitanium_bow": "Clitanium Bow",
+  "item.enhanced_end.clitanium_crossbow": "Clitanium Crossbow(WIP)",
+  "item.enhanced_end.clitanium_sword": "Clitanium Sword",
+  "item.enhanced_end.clitanium_axe": "Clitanium Axe",
+  "item.enhanced_end.clitanium_pickaxe": "Clitanium Pickaxe",
+  "item.enhanced_end.clitanium_shovel": "Clitanium Shovel",
+  "item.enhanced_end.clitanium_hoe": "Clitanium Hoe",
+
+  "item.enhanced_end.clitanium_helmet": "Clitanium Helmet",
+  "item.enhanced_end.clitanium_chestplate": "Clitanium Chestplate",
+  "item.enhanced_end.clitanium_leggings": "Clitanium Leggings",
+  "item.enhanced_end.clitanium_boots": "Clitanium Boots",
+
+
+
+  "entity.enhanced_end.enhanced_enderman": "Enhanced Enderman",
+  "item.enhanced_end.enhanced_enderman_spawn_egg": "Enhanced Enderman Spawn Egg",
+
+  "entity.enhanced_end.allamite": "Allamite",
+  "item.enhanced_end.allamite_spawn_egg": "Allamite Spawn Egg",
+
+  "entity.enhanced_end.seaspray": "Seaspray",
+  "item.enhanced_end.seaspray_spawn_egg": "Seaspray Spawn Egg",
+
+  "entity.enhanced_end.enforced_obsidian_golem": "Reinforced Obsidian Golem",
+  "item.enhanced_end.enforced_obsidian_golem_spawn_egg": "Reinforced Obsidian Golem Spawn Egg",
+
+  "entity.enhanced_end.bulwark_sentry": "Sentry",
+  "item.enhanced_end.bulwark_sentry_spawn_egg": "Sentry Spawn Egg",
+
+  "entity.enhanced_end.bulwark_shadow": "Shadow",
+  "item.enhanced_end.bulwark_shadow_spawn_egg": "Shadow Spawn Egg",
+
+  "entity.enhanced_end.bulwark_sentinel": "Sentinel",
+  "item.enhanced_end.bulwark_sentinel_spawn_egg": "Sentinel Spawn Egg",
+
+
+  "item.enhanced_end.raw_allam": "Raw Allam",
+  "item.enhanced_end.cooked_allam": "Cooked Allam",
+  "item.enhanced_end.eneria_speck": "Eneria Speck",
+
+  "item.enhanced_end.reinforced_shard": "Reinforced Shard",
+  "item.enhanced_end.reinforced_nether_star": "Reinforced Nether Star",
+  "item.enhanced_end.allamite_hide": "Allamite Hide",
+  "item.enhanced_end.sentry_disk": "Sentry Disk",
+  "item.enhanced_end.shadow_shard": "Shadow Shard",
+  "item.enhanced_end.enhanced_pearl": "Enhanced Pearl",
+  "item.enhanced_end.phantom_pearl": "Phantom Pearl",
+  "item.enhanced_end.enhanced_eye": "Enhanced Eye",
+
+  "item.enhanced_end.inactive_shadow_rune": "Inactive Shadow Rune",
+  "item.enhanced_end.active_shadow_rune": "Active Shadow Rune",
+  "item.enhanced_end.shadow_rune_fragment": "Shadow Rune Fragment",
+
+  "item.enhanced_end.negation_rune": "Negation Rune",
+  "item.enhanced_end.hellbent_rune": "Hellbent Rune",
+  "item.enhanced_end.agility_rune": "Agility Rune",
+  "item.enhanced_end.regeneration_rune": "Regeneration Rune",
+  "item.enhanced_end.phantom_rune": "Phantom Rune",
+  "item.enhanced_end.aquatic_rune": "Aquatic Rune",
+
+  "item.enhanced_end.rune_of_runes": "Rune of Runes",
+
+  "item.enhanced_end.blazing_orb": "Blazing Orb",
+  "item.enhanced_end.hellfire_orb": "Hellfire Orb",
+  "item.enhanced_end.immersed_orb": "Immersed Orb",
+  "item.enhanced_end.corrupted_orb": "Corrupted Orb",
+  "item.enhanced_end.enderfied_orb": "Enderfied Orb",
+  "item.enhanced_end.evoker_orb": "Evoker's Orb",
+  "item.enhanced_end.spirit_orb": "Spirit Orb",
+  "item.enhanced_end.celerity_orb": "Celerity Orb",
+
+  "item.enhanced_end.enhanced_orb": "Enhanced Orb",
+
+
+  "item.enhanced_end.tanzanite_beetroot": "Tanzanite Beetroot",
+  "item.enhanced_end.enhanced_beetroot": "Enhanced Beetroot",
+  "item.enhanced_end.enchanted_enhanced_beetroot": "Enchanted Enhanced Beetroot",
+  "item.enhanced_end.diamond_beetroot": "Diamond Beetroot",
+  "item.enhanced_end.golden_beetroot": "Golden Beetroot",
+  "item.enhanced_end.corrupted_beetroot": "Corrupted Beetroot",
+
+  "item.enhanced_end.mysterious_lights_music_disc": "Music Disc",
+  "item.enhanced_end.mysterious_lights_music_disc.desc": "Bryan Teoh - Mysterious Lights",
+  "item.enhanced_end.sanctity_music_disc": "Music Disc",
+  "item.enhanced_end.sanctity_music_disc.desc": "Konac - Sanctity",
+
+  "enchantment.enhanced_end.enhanced_magic": "Enhanced Magic",
+  "enchantment.enhanced_end.blindsighting": "Blindsighting",
+
+  "block.enhanced_end.endimintium_block": "Block of Endimintium",
+  "block.enhanced_end.end_tanzanite_ore": "End Tanzanite Ore",
+  "block.enhanced_end.tanzanite_block": "Block of Tanzanite",
+  "block.enhanced_end.raw_tanzanite_block": "Block of Raw Tanzanite",
+  "block.enhanced_end.tanzanite_lamp": "Tanzanite Lamp",
+
+  "block.enhanced_end.end_clitanium_ore": "End Clitanium Ore",
+  "block.enhanced_end.clitanium_block": "Block of Clitanium",
+  "block.enhanced_end.smooth_clitanium_block": "Smooth Clitanium Block",
+  "block.enhanced_end.clitanium_door": "Clitanium Door",
+  "block.enhanced_end.clitanium_trapdoor": "Clitanium Trapdoor",
+  "block.enhanced_end.clitanium_bars": "Clitanium Bars",
+
+  "block.enhanced_end.silstone": "Silstone",
+  "block.enhanced_end.silstone_button": "Silstone Button",
+  "block.enhanced_end.silstone_pressure_plate": "Silstone Pressure Plate",
+  "block.enhanced_end.silstone_stairs": "Silstone Stairs",
+  "block.enhanced_end.silstone_slab": "Silstone Slab",
+
+  "block.enhanced_end.cobbled_silstone": "Cobbled Silstone",
+  "block.enhanced_end.cobbled_silstone_stairs": "Cobbled Silstone Stairs",
+  "block.enhanced_end.cobbled_silstone_slab": "Cobbled Silstone Slab",
+  "block.enhanced_end.cobbled_silstone_wall": "Cobbled Silstone Wall",
+
+  "block.enhanced_end.silstone_bricks": "Silstone Bricks",
+  "block.enhanced_end.silstone_brick_stairs": "Silstone Brick Stairs",
+  "block.enhanced_end.silstone_brick_slab": "Silstone Brick Slab",
+  "block.enhanced_end.silstone_brick_wall": "Silstone Brick Wall",
+  "block.enhanced_end.chiseled_silstone": "Chiseled Silstone",
+
+  "block.enhanced_end.kimberlite": "Kimberlite",
+  "block.enhanced_end.kimberlite_stairs": "Kimberlite Stairs",
+  "block.enhanced_end.kimberlite_slab": "Kimberlite Slab",
+  "block.enhanced_end.kimberlite_pillar": "Kimberlite Pillar",
+  "block.enhanced_end.infused_kimberlite": "Infused Kimberlite",
+
+  "block.enhanced_end.polished_kimberlite": "Polished Kimberlite",
+  "block.enhanced_end.polished_kimberlite_stairs": "Polished Kimberlite Stairs",
+  "block.enhanced_end.polished_kimberlite_slab": "Polished Kimberlite Slab",
+  "block.enhanced_end.polished_kimberlite_wall": "Polished Kimberlite Wall",
+
+
+
+  "block.enhanced_end.laristone": "Laristone",
+  "block.enhanced_end.laristone_stairs": "Laristone Stairs",
+  "block.enhanced_end.laristone_slab": "Laristone Slab",
+
+  "block.enhanced_end.laristone_bricks": "Laristone Bricks",
+  "block.enhanced_end.laristone_brick_stairs": "Laristone Brick Stairs",
+  "block.enhanced_end.laristone_brick_slab": "Laristone Brick Slab",
+  "block.enhanced_end.laristone_brick_wall": "Laristone Brick Wall",
+
+
+
+  "block.enhanced_end.midnight_end_stone": "Midnight End Stone",
+  "block.enhanced_end.corlite_end_stone": "Corlite End Stone",
+
+
+  "block.enhanced_end.midnight_mushroom": "Midnight Mushroom",
+  "block.enhanced_end.corlite_mushroom": "Corlite Mushroom",
+  "block.enhanced_end.potted_midnight_mushroom": "Potted Midnight Mushroom",
+  "block.enhanced_end.potted_corlite_mushroom": "Potted Corlite Mushroom",
+  "block.enhanced_end.midnight_blots": "Midnight Blots",
+  "block.enhanced_end.corlite_blots": "Corlite Blots",
+
+  "block.enhanced_end.midnight_fescus": "Midnight Fescus",
+  "block.enhanced_end.endium_rhizome": "Endium Rhizome",
+  "block.enhanced_end.corlite_fescus": "Corlite Fescus",
+
+
+  "block.enhanced_end.endium_soil": "Endium Soil",
+  "block.enhanced_end.endium_mushroom_block": "Endium Mushroom Block",
+  "block.enhanced_end.endium_mushroom": "Endium Mushroom",
+  "block.enhanced_end.potted_endium_mushroom": "Potted Endium Mushroom",
+  "block.enhanced_end.hardened_ender_matter": "Hardened Ender Matter",
+
+  "block.enhanced_end.shaded_oculit": "Shaded Oculit",
+  "block.enhanced_end.tinted_oculit": "Tinted Oculit",
+  "block.enhanced_end.potted_shaded_oculit": "Potted Shaded Oculit",
+  "block.enhanced_end.potted_tinted_oculit": "Potted Tinted Oculit",
+
+  "block.enhanced_end.eneria_cane": "Eneria Cane",
+
+  "block.enhanced_end.end_floria": "End Floria",
+  "block.enhanced_end.potted_end_floria": "Potted End Floria",
+
+
+
+  "itemgroup.enhanced_end_blocks": "Enhanced End Blocks",
+  "itemgroup.enhanced_end_items": "Enhanced End Items"
+
+}

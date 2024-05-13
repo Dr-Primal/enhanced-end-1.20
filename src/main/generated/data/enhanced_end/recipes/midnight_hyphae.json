@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "enhanced_end:midnight_stem"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "item": "enhanced_end:midnight_hyphae"
+  },
+  "show_notification": true
+}

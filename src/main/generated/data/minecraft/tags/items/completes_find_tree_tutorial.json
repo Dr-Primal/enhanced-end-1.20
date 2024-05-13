@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "enhanced_end:midnight_stem",
+    "enhanced_end:midnight_hyphae",
+    "enhanced_end:stripped_midnight_stem",
+    "enhanced_end:stripped_midnight_hyphae",
+    "enhanced_end:corlite_stem",
+    "enhanced_end:corlite_hyphae",
+    "enhanced_end:stripped_corlite_stem",
+    "enhanced_end:stripped_corlite_hyphae"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enhanced_end:corlite_stem",
+    "enhanced_end:corlite_hyphae",
+    "enhanced_end:stripped_corlite_stem",
+    "enhanced_end:stripped_corlite_hyphae"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enhanced_end:block/corlite_slab"
+    },
+    "type=double": {
+      "model": "enhanced_end:block/corlite_planks"
+    },
+    "type=top": {
+      "model": "enhanced_end:block/corlite_slab_top"
+    }
+  }
+}
