@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_end:laristone"
+  },
+  "result": "enhanced_end:laristone_brick_slab"
+}

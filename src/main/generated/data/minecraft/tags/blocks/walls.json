@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enhanced_end:polished_kimberlite_wall",
+    "enhanced_end:polished_kimberlite_brick_wall",
+    "enhanced_end:laristone_wall",
+    "enhanced_end:laristone_brick_wall"
+  ]
+}

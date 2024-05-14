@@ -87,5 +87,59 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(EEBlocks.MIDNIGHT_TRAPDOOR)
                 .add(EEBlocks.CORLITE_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(EEBlocks.KIMBERLITE)
+                .add(EEBlocks.KIMBERLITE_STAIRS)
+                .add(EEBlocks.KIMBERLITE_SLAB)
+                .add(EEBlocks.KIMBERLITE_BUTTON)
+                .add(EEBlocks.KIMBERLITE_PRESSURE_PLATE)
+                .add(EEBlocks.POLISHED_KIMBERLITE)
+                .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_WALL)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICKS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL)
+                .add(EEBlocks.POLISHED_KIMBERLITE_PILLAR)
+                .add(EEBlocks.LARISTONE)
+                .add(EEBlocks.LARISTONE_STAIRS)
+                .add(EEBlocks.LARISTONE_SLAB)
+                .add(EEBlocks.LARISTONE_WALL)
+                .add(EEBlocks.LARISTONE_BUTTON)
+                .add(EEBlocks.LARISTONE_PRESSURE_PLATE)
+                .add(EEBlocks.LARISTONE_BRICKS)
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS)
+                .add(EEBlocks.LARISTONE_BRICK_SLAB)
+                .add(EEBlocks.LARISTONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(EEBlocks.KIMBERLITE_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS)
+                .add(EEBlocks.LARISTONE_STAIRS)
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(EEBlocks.KIMBERLITE_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB)
+                .add(EEBlocks.LARISTONE_SLAB)
+                .add(EEBlocks.LARISTONE_BRICK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_WALL)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL)
+                .add(EEBlocks.LARISTONE_WALL)
+                .add(EEBlocks.LARISTONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(EEBlocks.KIMBERLITE_BUTTON)
+                .add(EEBlocks.LARISTONE_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
+                .add(EEBlocks.KIMBERLITE_PRESSURE_PLATE)
+                .add(EEBlocks.LARISTONE_PRESSURE_PLATE);
     }
 }

@@ -2,6 +2,7 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.primal.enhanced_end.block.EEBlocks;
 
@@ -47,5 +48,31 @@ public class EELootTableProvider extends FabricBlockLootTableProvider {
         addDrop(EEBlocks.WALL_HANGING_CORLITE_SIGN);
         addDrop(EEBlocks.CORLITE_DOOR, doorDrops(EEBlocks.CORLITE_DOOR));
         addDrop(EEBlocks.CORLITE_SLAB, slabDrops(EEBlocks.CORLITE_SLAB));
+
+        addDrop(EEBlocks.KIMBERLITE);
+        addDrop(EEBlocks.KIMBERLITE_STAIRS);
+        addDrop(EEBlocks.KIMBERLITE_BUTTON);
+        addDrop(EEBlocks.KIMBERLITE_PRESSURE_PLATE);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_STAIRS);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_WALL);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_BRICKS);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL);
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_PILLAR);
+        addDrop(EEBlocks.KIMBERLITE_SLAB, slabDrops(EEBlocks.KIMBERLITE_SLAB));
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_SLAB, slabDrops(EEBlocks.POLISHED_KIMBERLITE_SLAB));
+        addDrop(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB, slabDrops(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB));
+
+        addDrop(EEBlocks.LARISTONE);
+        addDrop(EEBlocks.LARISTONE_STAIRS);
+        addDrop(EEBlocks.LARISTONE_WALL);
+        addDrop(EEBlocks.LARISTONE_BUTTON);
+        addDrop(EEBlocks.LARISTONE_PRESSURE_PLATE);
+        addDrop(EEBlocks.LARISTONE_BRICKS);
+        addDrop(EEBlocks.LARISTONE_BRICK_STAIRS);
+        addDrop(EEBlocks.LARISTONE_BRICK_WALL);
+        addDrop(EEBlocks.LARISTONE_SLAB, slabDrops(EEBlocks.LARISTONE_SLAB));
+        addDrop(EEBlocks.LARISTONE_BRICK_SLAB, slabDrops(EEBlocks.LARISTONE_BRICK_SLAB));
     }
 }

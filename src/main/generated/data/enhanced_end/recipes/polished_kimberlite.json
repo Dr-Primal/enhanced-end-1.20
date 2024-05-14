@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "enhanced_end:kimberlite"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "enhanced_end:polished_kimberlite"
+  },
+  "show_notification": true
+}

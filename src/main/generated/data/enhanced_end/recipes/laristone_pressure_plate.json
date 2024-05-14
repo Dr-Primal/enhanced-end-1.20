@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "enhanced_end:laristone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "enhanced_end:laristone_pressure_plate"
+  },
+  "show_notification": true
+}

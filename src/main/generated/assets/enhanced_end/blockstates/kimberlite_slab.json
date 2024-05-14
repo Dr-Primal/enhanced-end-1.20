@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enhanced_end:block/kimberlite_slab"
+    },
+    "type=double": {
+      "model": "enhanced_end:block/kimberlite"
+    },
+    "type=top": {
+      "model": "enhanced_end:block/kimberlite_slab_top"
+    }
+  }
+}

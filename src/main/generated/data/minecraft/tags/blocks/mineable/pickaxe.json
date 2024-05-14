@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "enhanced_end:kimberlite",
+    "enhanced_end:kimberlite_stairs",
+    "enhanced_end:kimberlite_slab",
+    "enhanced_end:kimberlite_button",
+    "enhanced_end:kimberlite_pressure_plate",
+    "enhanced_end:polished_kimberlite",
+    "enhanced_end:polished_kimberlite_stairs",
+    "enhanced_end:polished_kimberlite_slab",
+    "enhanced_end:polished_kimberlite_wall",
+    "enhanced_end:polished_kimberlite_bricks",
+    "enhanced_end:polished_kimberlite_brick_stairs",
+    "enhanced_end:polished_kimberlite_brick_slab",
+    "enhanced_end:polished_kimberlite_brick_wall",
+    "enhanced_end:polished_kimberlite_pillar",
+    "enhanced_end:laristone",
+    "enhanced_end:laristone_stairs",
+    "enhanced_end:laristone_slab",
+    "enhanced_end:laristone_wall",
+    "enhanced_end:laristone_button",
+    "enhanced_end:laristone_pressure_plate",
+    "enhanced_end:laristone_bricks",
+    "enhanced_end:laristone_brick_stairs",
+    "enhanced_end:laristone_brick_slab",
+    "enhanced_end:laristone_brick_wall"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "enhanced_end_blocks",
+  "ingredients": [
+    {
+      "item": "enhanced_end:kimberlite"
+    }
+  ],
+  "result": {
+    "item": "enhanced_end:kimberlite_button"
+  }
+}

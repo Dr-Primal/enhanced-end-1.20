@@ -179,19 +179,26 @@
   "block.enhanced_end.kimberlite": "Kimberlite",
   "block.enhanced_end.kimberlite_stairs": "Kimberlite Stairs",
   "block.enhanced_end.kimberlite_slab": "Kimberlite Slab",
-  "block.enhanced_end.kimberlite_pillar": "Kimberlite Pillar",
-  "block.enhanced_end.infused_kimberlite": "Infused Kimberlite",
-
+  "block.enhanced_end.kimberlite_button": "Kimberlite Button",
+  "block.enhanced_end.kimberlite_pressure_plate": "Kimberlite Pressure Plate",
+  "block.enhanced_end.polished_kimberlite_pillar": "Polished Kimberlite Pillar",
   "block.enhanced_end.polished_kimberlite": "Polished Kimberlite",
   "block.enhanced_end.polished_kimberlite_stairs": "Polished Kimberlite Stairs",
   "block.enhanced_end.polished_kimberlite_slab": "Polished Kimberlite Slab",
   "block.enhanced_end.polished_kimberlite_wall": "Polished Kimberlite Wall",
+  "block.enhanced_end.polished_kimberlite_bricks": "Polished Kimberlite Bricks",
+  "block.enhanced_end.polished_kimberlite_brick_stairs": "Polished Kimberlite Brick Stairs",
+  "block.enhanced_end.polished_kimberlite_brick_slab": "Polished Kimberlite Brick Slab",
+  "block.enhanced_end.polished_kimberlite_brick_wall": "Polished Kimberlite Brick Wall",
 
+  "block.enhanced_end.infused_kimberlite": "Infused Kimberlite",
 
 
   "block.enhanced_end.laristone": "Laristone",
   "block.enhanced_end.laristone_stairs": "Laristone Stairs",
   "block.enhanced_end.laristone_slab": "Laristone Slab",
+  "block.enhanced_end.laristone_wall": "Laristone Wall",
+
 
   "block.enhanced_end.laristone_bricks": "Laristone Bricks",
   "block.enhanced_end.laristone_brick_stairs": "Laristone Brick Stairs",

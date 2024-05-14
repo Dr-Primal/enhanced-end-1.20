@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_midnight_stem": {
+    "has_log": {
       "conditions": {
         "items": [
           {
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stripped_midnight_hyphae"
+        "recipe": "enhanced_end:stripped_midnight_hyphae"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stripped_midnight_stem",
+      "has_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stripped_midnight_hyphae"
+      "enhanced_end:stripped_midnight_hyphae"
     ]
   },
   "sends_telemetry_event": false

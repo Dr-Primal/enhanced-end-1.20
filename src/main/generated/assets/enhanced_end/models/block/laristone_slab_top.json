@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "enhanced_end:block/laristone",
+    "side": "enhanced_end:block/laristone",
+    "top": "enhanced_end:block/laristone"
+  }
+}

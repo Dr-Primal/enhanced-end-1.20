@@ -6,7 +6,6 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.util.EETags;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,7 +19,6 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(EEBlocks.MIDNIGHT_PLANKS.asItem())
                 .add(EEBlocks.CORLITE_PLANKS.asItem());
-
 
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
                 .add(EEBlocks.MIDNIGHT_SLAB.asItem())
@@ -42,7 +40,6 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(EEBlocks.MIDNIGHT_BUTTON.asItem())
                 .add(EEBlocks.CORLITE_BUTTON.asItem());
 
-
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
                 .add(EEBlocks.MIDNIGHT_PRESSURE_PLATE.asItem())
                 .add(EEBlocks.CORLITE_PRESSURE_PLATE.asItem());
@@ -51,11 +48,9 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(EEBlocks.MIDNIGHT_DOOR.asItem())
                 .add(EEBlocks.CORLITE_DOOR.asItem());
 
-
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
                 .add(EEBlocks.MIDNIGHT_TRAPDOOR.asItem())
                 .add(EEBlocks.CORLITE_TRAPDOOR.asItem());
-
 
         getOrCreateTagBuilder(ItemTags.SIGNS)
                 .add(EEBlocks.STANDING_MIDNIGHT_SIGN.asItem())
@@ -88,5 +83,39 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(EEBlocks.CORLITE_HYPHAE.asItem())
                 .add(EEBlocks.STRIPPED_CORLITE_STEM.asItem())
                 .add(EEBlocks.STRIPPED_CORLITE_HYPHAE.asItem());
+
+
+        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(EEBlocks.KIMBERLITE.asItem())
+                .add(EEBlocks.LARISTONE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(EEBlocks.KIMBERLITE.asItem())
+                .add(EEBlocks.LARISTONE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
+                .add(EEBlocks.KIMBERLITE_BUTTON.asItem())
+                .add(EEBlocks.LARISTONE_BUTTON.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(EEBlocks.KIMBERLITE_STAIRS.asItem())
+                .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS.asItem())
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS.asItem())
+                .add(EEBlocks.LARISTONE_STAIRS.asItem())
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(EEBlocks.KIMBERLITE_SLAB.asItem())
+                .add(EEBlocks.POLISHED_KIMBERLITE_SLAB.asItem())
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB.asItem())
+                .add(EEBlocks.LARISTONE_SLAB.asItem())
+                .add(EEBlocks.LARISTONE_BRICK_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_WALL.asItem())
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL.asItem())
+                .add(EEBlocks.LARISTONE_WALL.asItem())
+                .add(EEBlocks.LARISTONE_BRICK_WALL.asItem());
+
     }
 }
