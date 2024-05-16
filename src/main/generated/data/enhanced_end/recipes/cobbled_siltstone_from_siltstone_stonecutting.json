@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_end:siltstone"
+  },
+  "result": "enhanced_end:cobbled_siltstone"
+}

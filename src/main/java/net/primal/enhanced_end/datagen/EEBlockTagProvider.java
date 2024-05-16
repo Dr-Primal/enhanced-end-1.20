@@ -112,34 +112,57 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(EEBlocks.LARISTONE_BRICKS)
                 .add(EEBlocks.LARISTONE_BRICK_STAIRS)
                 .add(EEBlocks.LARISTONE_BRICK_SLAB)
-                .add(EEBlocks.LARISTONE_BRICK_WALL);
+                .add(EEBlocks.LARISTONE_BRICK_WALL)
+                .add(EEBlocks.SILTSTONE)
+                .add(EEBlocks.SILTSTONE_STAIRS)
+                .add(EEBlocks.SILTSTONE_SLAB)
+                .add(EEBlocks.SILTSTONE_BUTTON)
+                .add(EEBlocks.SILTSTONE_PRESSURE_PLATE)
+                .add(EEBlocks.COBBLED_SILTSTONE)
+                .add(EEBlocks.COBBLED_SILTSTONE_STAIRS)
+                .add(EEBlocks.COBBLED_SILTSTONE_SLAB)
+                .add(EEBlocks.COBBLED_SILTSTONE_WALL)
+                .add(EEBlocks.SILTSTONE_BRICKS)
+                .add(EEBlocks.SILTSTONE_BRICK_STAIRS)
+                .add(EEBlocks.SILTSTONE_BRICK_SLAB)
+                .add(EEBlocks.SILTSTONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(EEBlocks.KIMBERLITE_STAIRS)
                 .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS)
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS)
                 .add(EEBlocks.LARISTONE_STAIRS)
-                .add(EEBlocks.LARISTONE_BRICK_STAIRS);
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS)
+                .add(EEBlocks.SILTSTONE_STAIRS)
+                .add(EEBlocks.COBBLED_SILTSTONE_STAIRS)
+                .add(EEBlocks.SILTSTONE_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(EEBlocks.KIMBERLITE_SLAB)
                 .add(EEBlocks.POLISHED_KIMBERLITE_SLAB)
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB)
                 .add(EEBlocks.LARISTONE_SLAB)
-                .add(EEBlocks.LARISTONE_BRICK_SLAB);
+                .add(EEBlocks.LARISTONE_BRICK_SLAB)
+                .add(EEBlocks.SILTSTONE_SLAB)
+                .add(EEBlocks.COBBLED_SILTSTONE_SLAB)
+                .add(EEBlocks.SILTSTONE_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(EEBlocks.POLISHED_KIMBERLITE_WALL)
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL)
                 .add(EEBlocks.LARISTONE_WALL)
-                .add(EEBlocks.LARISTONE_BRICK_WALL);
+                .add(EEBlocks.LARISTONE_BRICK_WALL)
+                .add(EEBlocks.COBBLED_SILTSTONE_WALL)
+                .add(EEBlocks.SILTSTONE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.BUTTONS)
                 .add(EEBlocks.KIMBERLITE_BUTTON)
-                .add(EEBlocks.LARISTONE_BUTTON);
+                .add(EEBlocks.LARISTONE_BUTTON)
+                .add(EEBlocks.SILTSTONE_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
                 .add(EEBlocks.KIMBERLITE_PRESSURE_PLATE)
-                .add(EEBlocks.LARISTONE_PRESSURE_PLATE);
+                .add(EEBlocks.LARISTONE_PRESSURE_PLATE)
+                .add(EEBlocks.SILTSTONE_PRESSURE_PLATE);
     }
 }

@@ -182,6 +182,126 @@ public class EERecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.LARISTONE_BRICK_SLAB, EEBlocks.LARISTONE_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.LARISTONE_BRICK_WALL, EEBlocks.LARISTONE_BRICKS);
 
+        //Siltstone
+        createStairsRecipe(EEBlocks.SILTSTONE_STAIRS.asItem(), Ingredient.ofItems(EEBlocks.SILTSTONE.asItem()))
+                .criterion(hasItem(EEBlocks.SILTSTONE.asItem()),
+                        conditionsFromItem(EEBlocks.SILTSTONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(EEBlocks.SILTSTONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_SLAB, EEBlocks.SILTSTONE);
+        offerSingleOutputShapelessRecipe(exporter, EEBlocks.SILTSTONE_BUTTON, EEBlocks.SILTSTONE, "outer_world_blocks");
+        offerPressurePlateRecipe(exporter, EEBlocks.SILTSTONE_PRESSURE_PLATE, EEBlocks.SILTSTONE);
+
+        createStairsRecipe(EEBlocks.COBBLED_SILTSTONE_STAIRS.asItem(), Ingredient.ofItems(EEBlocks.COBBLED_SILTSTONE.asItem()))
+                .criterion(hasItem(EEBlocks.COBBLED_SILTSTONE.asItem()),
+                        conditionsFromItem(EEBlocks.COBBLED_SILTSTONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(EEBlocks.COBBLED_SILTSTONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_SLAB, EEBlocks.COBBLED_SILTSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_WALL, EEBlocks.COBBLED_SILTSTONE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICKS, 4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', EEBlocks.COBBLED_SILTSTONE.asItem())
+                .criterion(hasItem(EEBlocks.COBBLED_SILTSTONE.asItem()),
+                        conditionsFromItem(EEBlocks.COBBLED_SILTSTONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(EEBlocks.SILTSTONE_BRICKS.asItem())));
+        createStairsRecipe(EEBlocks.SILTSTONE_BRICK_STAIRS.asItem(), Ingredient.ofItems(EEBlocks.SILTSTONE_BRICKS.asItem()))
+                .criterion(hasItem(EEBlocks.SILTSTONE_BRICKS.asItem()),
+                        conditionsFromItem(EEBlocks.SILTSTONE_BRICKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(EEBlocks.SILTSTONE_BRICK_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.SILTSTONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.SILTSTONE_BRICKS);
+
+        //Clitanium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, EEItems.CLITANIUM_HELMET, 1)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_HELMET)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, EEItems.CLITANIUM_CHESTPLATE, 1)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, EEItems.CLITANIUM_LEGGINGS, 1)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, EEItems.CLITANIUM_BOOTS, 1)
+                .pattern("R R")
+                .pattern("R R")
+                .pattern("   ")
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_BOOTS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEItems.CLITANIUM_SWORD, 1)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_SWORD)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEItems.CLITANIUM_PICKAXE, 1)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEItems.CLITANIUM_AXE, 1)
+                .pattern(" RR")
+                .pattern(" SR")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_AXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEItems.CLITANIUM_SHOVEL, 1)
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEItems.CLITANIUM_HOE, 1)
+                .pattern("RR ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', EEItems.CLITANIUM)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_HOE)));
+
 //Stone Cutting
         //Kimberlite
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS, EEBlocks.POLISHED_KIMBERLITE_BRICKS);
@@ -221,5 +341,29 @@ public class EERecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.LARISTONE_BRICK_STAIRS, EEBlocks.LARISTONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.LARISTONE_BRICK_SLAB, EEBlocks.LARISTONE_BRICKS, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.LARISTONE_BRICK_WALL, EEBlocks.LARISTONE_BRICKS);
+
+        //Siltstone
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_STAIRS, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_SLAB, EEBlocks.SILTSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_STAIRS, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_SLAB, EEBlocks.SILTSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_WALL, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICKS, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_STAIRS, EEBlocks.SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.SILTSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.SILTSTONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_STAIRS, EEBlocks.COBBLED_SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_SLAB, EEBlocks.COBBLED_SILTSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.COBBLED_SILTSTONE_WALL, EEBlocks.COBBLED_SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICKS, EEBlocks.COBBLED_SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_STAIRS, EEBlocks.COBBLED_SILTSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.COBBLED_SILTSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.COBBLED_SILTSTONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_STAIRS, EEBlocks.SILTSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.SILTSTONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.SILTSTONE_BRICKS);
     }
 }

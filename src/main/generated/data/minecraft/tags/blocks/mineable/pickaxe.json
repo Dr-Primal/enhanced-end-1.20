@@ -24,6 +24,19 @@
     "enhanced_end:laristone_bricks",
     "enhanced_end:laristone_brick_stairs",
     "enhanced_end:laristone_brick_slab",
-    "enhanced_end:laristone_brick_wall"
+    "enhanced_end:laristone_brick_wall",
+    "enhanced_end:siltstone",
+    "enhanced_end:siltstone_stairs",
+    "enhanced_end:siltstone_slab",
+    "enhanced_end:siltstone_button",
+    "enhanced_end:siltstone_pressure_plate",
+    "enhanced_end:cobbled_siltstone",
+    "enhanced_end:cobbled_siltstone_stairs",
+    "enhanced_end:cobbled_siltstone_slab",
+    "enhanced_end:cobbled_siltstone_wall",
+    "enhanced_end:siltstone_bricks",
+    "enhanced_end:siltstone_brick_stairs",
+    "enhanced_end:siltstone_brick_slab",
+    "enhanced_end:siltstone_brick_wall"
   ]
 }

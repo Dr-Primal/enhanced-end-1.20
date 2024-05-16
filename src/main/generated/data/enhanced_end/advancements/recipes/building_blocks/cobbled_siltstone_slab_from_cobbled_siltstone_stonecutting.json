@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobbled_siltstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_end:cobbled_siltstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cobbled_siltstone_slab_from_cobbled_siltstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cobbled_siltstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cobbled_siltstone_slab_from_cobbled_siltstone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

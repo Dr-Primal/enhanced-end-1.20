@@ -373,6 +373,98 @@ public class EEBlocks {
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
 
+    //Siltstone
+    public static final Block SILTSTONE = registerBlock("siltstone",
+            new Block(FabricBlockSettings.copy(Blocks.STONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block SILTSTONE_STAIRS = registerBlock("siltstone_stairs",
+            new StairsBlock(SILTSTONE.getDefaultState(), FabricBlockSettings.copyOf(SILTSTONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+    public static final Block SILTSTONE_SLAB = registerBlock("siltstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block SILTSTONE_BUTTON = registerBlock("siltstone_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .strength(0.5f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)
+                    .collidable(false),
+                    BlockSetType.STONE, 20, false));
+    public static final Block SILTSTONE_PRESSURE_PLATE = registerBlock("siltstone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.PALE_YELLOW)
+                            .requiresTool()
+                            .strength(0.5f)
+                            .sounds(BlockSoundGroup.POINTED_DRIPSTONE),
+                    BlockSetType.STONE));
+
+    public static final Block COBBLED_SILTSTONE = registerBlock("cobbled_siltstone",
+            new Block(FabricBlockSettings.copy(Blocks.COBBLESTONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block COBBLED_SILTSTONE_STAIRS = registerBlock("cobbled_siltstone_stairs",
+            new StairsBlock(COBBLED_SILTSTONE.getDefaultState(), FabricBlockSettings.copyOf(COBBLED_SILTSTONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+    public static final Block COBBLED_SILTSTONE_SLAB = registerBlock("cobbled_siltstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block COBBLED_SILTSTONE_WALL = registerBlock("cobbled_siltstone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(EEBlocks.COBBLED_SILTSTONE).solid()
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block SILTSTONE_BRICKS = registerBlock("siltstone_bricks",
+            new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block SILTSTONE_BRICK_STAIRS = registerBlock("siltstone_brick_stairs",
+            new StairsBlock(SILTSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(SILTSTONE_BRICKS)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+    public static final Block SILTSTONE_BRICK_SLAB = registerBlock("siltstone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
+
+    public static final Block SILTSTONE_BRICK_WALL = registerBlock("siltstone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(EEBlocks.SILTSTONE_BRICKS)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(1.5f, 3.0f)
+                    .sounds(BlockSoundGroup.POINTED_DRIPSTONE)
+                    .solid()));
+
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(EnhancedEnd.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));

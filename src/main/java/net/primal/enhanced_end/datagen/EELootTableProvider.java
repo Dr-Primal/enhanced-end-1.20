@@ -74,5 +74,19 @@ public class EELootTableProvider extends FabricBlockLootTableProvider {
         addDrop(EEBlocks.LARISTONE_BRICK_WALL);
         addDrop(EEBlocks.LARISTONE_SLAB, slabDrops(EEBlocks.LARISTONE_SLAB));
         addDrop(EEBlocks.LARISTONE_BRICK_SLAB, slabDrops(EEBlocks.LARISTONE_BRICK_SLAB));
+
+        addDrop(EEBlocks.SILTSTONE, (Block block) -> this.drops(block, EEBlocks.COBBLED_SILTSTONE));
+        addDrop(EEBlocks.SILTSTONE_STAIRS);
+        addDrop(EEBlocks.SILTSTONE_BUTTON);
+        addDrop(EEBlocks.SILTSTONE_PRESSURE_PLATE);
+        addDrop(EEBlocks.COBBLED_SILTSTONE);
+        addDrop(EEBlocks.COBBLED_SILTSTONE_STAIRS);
+        addDrop(EEBlocks.COBBLED_SILTSTONE_WALL);
+        addDrop(EEBlocks.SILTSTONE_BRICKS);
+        addDrop(EEBlocks.SILTSTONE_BRICK_STAIRS);
+        addDrop(EEBlocks.SILTSTONE_BRICK_WALL);
+        addDrop(EEBlocks.SILTSTONE_SLAB, slabDrops(EEBlocks.SILTSTONE_SLAB));
+        addDrop(EEBlocks.COBBLED_SILTSTONE_SLAB, slabDrops(EEBlocks.COBBLED_SILTSTONE_SLAB));
+        addDrop(EEBlocks.SILTSTONE_BRICK_SLAB, slabDrops(EEBlocks.SILTSTONE_BRICK_SLAB));
     }
 }

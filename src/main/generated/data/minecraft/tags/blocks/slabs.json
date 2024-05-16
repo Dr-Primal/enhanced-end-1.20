@@ -5,6 +5,9 @@
     "enhanced_end:polished_kimberlite_slab",
     "enhanced_end:polished_kimberlite_brick_slab",
     "enhanced_end:laristone_slab",
-    "enhanced_end:laristone_brick_slab"
+    "enhanced_end:laristone_brick_slab",
+    "enhanced_end:siltstone_slab",
+    "enhanced_end:cobbled_siltstone_slab",
+    "enhanced_end:siltstone_brick_slab"
   ]
 }

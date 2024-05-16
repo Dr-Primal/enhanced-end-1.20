@@ -75,13 +75,38 @@ public class EEItemGroups {
                             entries.add(EEBlocks.LARISTONE_BRICK_STAIRS);
                             entries.add(EEBlocks.LARISTONE_BRICK_SLAB);
                             entries.add(EEBlocks.LARISTONE_BRICK_WALL);
+
+                            entries.add(EEBlocks.SILTSTONE);
+                            entries.add(EEBlocks.SILTSTONE_STAIRS);
+                            entries.add(EEBlocks.SILTSTONE_SLAB);
+                            entries.add(EEBlocks.SILTSTONE_BUTTON);
+                            entries.add(EEBlocks.SILTSTONE_PRESSURE_PLATE);
+
+                            entries.add(EEBlocks.COBBLED_SILTSTONE);
+                            entries.add(EEBlocks.COBBLED_SILTSTONE_STAIRS);
+                            entries.add(EEBlocks.COBBLED_SILTSTONE_SLAB);
+                            entries.add(EEBlocks.COBBLED_SILTSTONE_WALL);
+
+                            entries.add(EEBlocks.SILTSTONE_BRICKS);
+                            entries.add(EEBlocks.SILTSTONE_BRICK_STAIRS);
+                            entries.add(EEBlocks.SILTSTONE_BRICK_SLAB);
+                            entries.add(EEBlocks.SILTSTONE_BRICK_WALL);
                         }).build());
 
         public static final ItemGroup OUTER_WORLD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
                 new Identifier(EnhancedEnd.MOD_ID, "enhanced_end_items"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.enhanced_end_items"))
-                        .icon(() -> new ItemStack(EEItems.MIDNIGHT_SIGN)).entries((displayContext, entries) -> {
-                        //entries.add();
+                        .icon(() -> new ItemStack(EEItems.CLITANIUM)).entries((displayContext, entries) -> {
+                            entries.add(EEItems.CLITANIUM);
+                            entries.add(EEItems.CLITANIUM_SWORD);
+                            entries.add(EEItems.CLITANIUM_PICKAXE);
+                            entries.add(EEItems.CLITANIUM_AXE);
+                            entries.add(EEItems.CLITANIUM_SHOVEL);
+                            entries.add(EEItems.CLITANIUM_HOE);
+                            entries.add(EEItems.CLITANIUM_HELMET);
+                            entries.add(EEItems.CLITANIUM_CHESTPLATE);
+                            entries.add(EEItems.CLITANIUM_LEGGINGS);
+                            entries.add(EEItems.CLITANIUM_BOOTS);
                         }).build());
 
 

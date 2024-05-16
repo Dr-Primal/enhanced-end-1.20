@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "enhanced_end:kimberlite_pressure_plate",
-    "enhanced_end:laristone_pressure_plate"
+    "enhanced_end:laristone_pressure_plate",
+    "enhanced_end:siltstone_pressure_plate"
   ]
 }

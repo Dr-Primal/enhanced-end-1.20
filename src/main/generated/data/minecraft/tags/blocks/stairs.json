@@ -5,6 +5,9 @@
     "enhanced_end:polished_kimberlite_stairs",
     "enhanced_end:polished_kimberlite_brick_stairs",
     "enhanced_end:laristone_stairs",
-    "enhanced_end:laristone_brick_stairs"
+    "enhanced_end:laristone_brick_stairs",
+    "enhanced_end:siltstone_stairs",
+    "enhanced_end:cobbled_siltstone_stairs",
+    "enhanced_end:siltstone_brick_stairs"
   ]
 }

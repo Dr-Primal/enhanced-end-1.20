@@ -4,6 +4,8 @@
     "enhanced_end:polished_kimberlite_wall",
     "enhanced_end:polished_kimberlite_brick_wall",
     "enhanced_end:laristone_wall",
-    "enhanced_end:laristone_brick_wall"
+    "enhanced_end:laristone_brick_wall",
+    "enhanced_end:cobbled_siltstone_wall",
+    "enhanced_end:siltstone_brick_wall"
   ]
 }

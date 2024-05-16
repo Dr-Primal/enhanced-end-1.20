@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "enhanced_end:cobbled_siltstone"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "enhanced_end:siltstone_bricks"
+  },
+  "show_notification": true
+}

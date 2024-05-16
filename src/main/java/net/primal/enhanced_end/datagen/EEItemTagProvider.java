@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.item.EEItems;
 import net.primal.enhanced_end.util.EETags;
 
 import java.util.concurrent.CompletableFuture;
@@ -86,36 +87,60 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
 
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
-                .add(EEBlocks.KIMBERLITE.asItem())
-                .add(EEBlocks.LARISTONE.asItem());
+                .add(EEBlocks.KIMBERLITE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
-                .add(EEBlocks.KIMBERLITE.asItem())
-                .add(EEBlocks.LARISTONE.asItem());
+                .add(EEBlocks.KIMBERLITE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
                 .add(EEBlocks.KIMBERLITE_BUTTON.asItem())
-                .add(EEBlocks.LARISTONE_BUTTON.asItem());
+                .add(EEBlocks.LARISTONE_BUTTON.asItem())
+                .add(EEBlocks.SILTSTONE_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.STAIRS)
                 .add(EEBlocks.KIMBERLITE_STAIRS.asItem())
                 .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS.asItem())
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS.asItem())
                 .add(EEBlocks.LARISTONE_STAIRS.asItem())
-                .add(EEBlocks.LARISTONE_BRICK_STAIRS.asItem());
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS.asItem())
+                .add(EEBlocks.SILTSTONE_STAIRS.asItem())
+                .add(EEBlocks.COBBLED_SILTSTONE_STAIRS.asItem())
+                .add(EEBlocks.SILTSTONE_BRICK_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.SLABS)
                 .add(EEBlocks.KIMBERLITE_SLAB.asItem())
                 .add(EEBlocks.POLISHED_KIMBERLITE_SLAB.asItem())
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB.asItem())
                 .add(EEBlocks.LARISTONE_SLAB.asItem())
-                .add(EEBlocks.LARISTONE_BRICK_SLAB.asItem());
+                .add(EEBlocks.LARISTONE_BRICK_SLAB.asItem())
+                .add(EEBlocks.SILTSTONE_SLAB.asItem())
+                .add(EEBlocks.COBBLED_SILTSTONE_SLAB.asItem())
+                .add(EEBlocks.SILTSTONE_BRICK_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WALLS)
                 .add(EEBlocks.POLISHED_KIMBERLITE_WALL.asItem())
                 .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL.asItem())
                 .add(EEBlocks.LARISTONE_WALL.asItem())
-                .add(EEBlocks.LARISTONE_BRICK_WALL.asItem());
+                .add(EEBlocks.LARISTONE_BRICK_WALL.asItem())
+                .add(EEBlocks.COBBLED_SILTSTONE_WALL.asItem())
+                .add(EEBlocks.SILTSTONE_BRICK_WALL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(EEItems.CLITANIUM_HELMET, EEItems.CLITANIUM_CHESTPLATE, EEItems.CLITANIUM_LEGGINGS, EEItems.CLITANIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(EEItems.CLITANIUM_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(EEItems.CLITANIUM_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(EEItems.CLITANIUM_AXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(EEItems.CLITANIUM_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(EEItems.CLITANIUM_HOE);
     }
 }

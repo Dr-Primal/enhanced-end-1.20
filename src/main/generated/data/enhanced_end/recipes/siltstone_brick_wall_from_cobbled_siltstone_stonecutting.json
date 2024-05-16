@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "enhanced_end:cobbled_siltstone"
+  },
+  "result": "enhanced_end:siltstone_brick_wall"
+}

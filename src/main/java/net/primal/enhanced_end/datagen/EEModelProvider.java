@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.item.ArmorItem;
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.item.EEItems;
 
 public class EEModelProvider extends FabricModelProvider {
     public EEModelProvider(FabricDataOutput output) {
@@ -15,6 +18,7 @@ public class EEModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //Midnight Wood Set
         BlockStateModelGenerator.BlockTexturePool midnightPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.MIDNIGHT_PLANKS);
         midnightPool.family(EEBlocks.MIDNIGHT_FAMILY);
         blockStateModelGenerator.registerLog(EEBlocks.MIDNIGHT_STEM).log(EEBlocks.MIDNIGHT_STEM).wood(EEBlocks.MIDNIGHT_HYPHAE);
@@ -29,6 +33,7 @@ public class EEModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(EEBlocks.MIDNIGHT_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(EEBlocks.MIDNIGHT_TRAPDOOR);
 
+        //Corlite Wood Set
         BlockStateModelGenerator.BlockTexturePool corlitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.CORLITE_PLANKS);
         corlitePool.family(EEBlocks.CORLITE_FAMILY);
         blockStateModelGenerator.registerLog(EEBlocks.CORLITE_STEM).log(EEBlocks.CORLITE_STEM).wood(EEBlocks.CORLITE_HYPHAE);
@@ -43,6 +48,7 @@ public class EEModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(EEBlocks.CORLITE_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(EEBlocks.CORLITE_TRAPDOOR);
 
+        //Kimberlite Stone Set
         BlockStateModelGenerator.BlockTexturePool kimberlitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.KIMBERLITE);
         BlockStateModelGenerator.BlockTexturePool polishedKimberlitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.POLISHED_KIMBERLITE);
         BlockStateModelGenerator.BlockTexturePool polishedKimberliteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.POLISHED_KIMBERLITE_BRICKS);
@@ -58,6 +64,7 @@ public class EEModelProvider extends FabricModelProvider {
         polishedKimberliteBrickPool.wall(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL);
         blockStateModelGenerator.registerAxisRotated(EEBlocks.POLISHED_KIMBERLITE_PILLAR, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
 
+        //Laristone Stone Set
         BlockStateModelGenerator.BlockTexturePool laristonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.LARISTONE);
         BlockStateModelGenerator.BlockTexturePool laristoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.LARISTONE_BRICKS);
         laristonePool.stairs(EEBlocks.LARISTONE_STAIRS);
@@ -68,10 +75,38 @@ public class EEModelProvider extends FabricModelProvider {
         laristoneBrickPool.stairs(EEBlocks.LARISTONE_BRICK_STAIRS);
         laristoneBrickPool.slab(EEBlocks.LARISTONE_BRICK_SLAB);
         laristoneBrickPool.wall(EEBlocks.LARISTONE_BRICK_WALL);
+
+        //Siltstone Stone Set
+        BlockStateModelGenerator.BlockTexturePool siltstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.SILTSTONE);
+        BlockStateModelGenerator.BlockTexturePool cobbledSiltstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.COBBLED_SILTSTONE);
+        BlockStateModelGenerator.BlockTexturePool siltstoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EEBlocks.SILTSTONE_BRICKS);
+        siltstonePool.stairs(EEBlocks.SILTSTONE_STAIRS);
+        siltstonePool.slab(EEBlocks.SILTSTONE_SLAB);
+        siltstonePool.button(EEBlocks.SILTSTONE_BUTTON);
+        siltstonePool.pressurePlate(EEBlocks.SILTSTONE_PRESSURE_PLATE);
+        cobbledSiltstonePool.stairs(EEBlocks.COBBLED_SILTSTONE_STAIRS);
+        cobbledSiltstonePool.slab(EEBlocks.COBBLED_SILTSTONE_SLAB);
+        cobbledSiltstonePool.wall(EEBlocks.COBBLED_SILTSTONE_WALL);
+        siltstoneBrickPool.stairs(EEBlocks.SILTSTONE_BRICK_STAIRS);
+        siltstoneBrickPool.slab(EEBlocks.SILTSTONE_BRICK_SLAB);
+        siltstoneBrickPool.wall(EEBlocks.SILTSTONE_BRICK_WALL);
+
+        //OreBlocks
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        //Clitanium Items
+        itemModelGenerator.register(EEItems.CLITANIUM, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_BOOTS));
+        itemModelGenerator.register(EEItems.CLITANIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.CLITANIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.CLITANIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.CLITANIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.CLITANIUM_HOE, Models.HANDHELD);
     }
 }
