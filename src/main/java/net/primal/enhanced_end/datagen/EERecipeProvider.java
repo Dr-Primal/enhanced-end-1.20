@@ -2,8 +2,12 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -17,6 +21,15 @@ import java.util.function.Consumer;
 public class EERecipeProvider extends FabricRecipeProvider {
     public EERecipeProvider(FabricDataOutput output) {
         super(output);
+    }
+
+    public static void offerEndimintiumUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(input),
+                Ingredient.ofItems(EEItems.ENDIMINTIUM_INGOT), category, result)
+                .criterion("has_endimintium_ingot",
+                RecipeProvider.conditionsFromItem(EEItems.ENDIMINTIUM_INGOT))
+                .offerTo(exporter, RecipeProvider.getItemPath(result) + "_smithing");
     }
 
     @Override
@@ -302,6 +315,21 @@ public class EERecipeProvider extends FabricRecipeProvider {
                         conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(EEItems.CLITANIUM_HOE)));
 
+        //Endimintium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, EEItems.ENDIMINTIUM_INGOT, 1)
+                .pattern("RRR")
+                .pattern("REE")
+                .pattern("EE ")
+                .input('R', EEItems.CLITANIUM)
+                .input('E', EEItems.ENDIMINTIUM_SCRAP)
+                .criterion(hasItem(EEItems.CLITANIUM),
+                        conditionsFromItem(EEItems.CLITANIUM))
+                .criterion(hasItem(EEItems.ENDIMINTIUM_SCRAP),
+                        conditionsFromItem(EEItems.ENDIMINTIUM_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(EEItems.ENDIMINTIUM_INGOT)));
+
+        offerSmithingTemplateCopyingRecipe(exporter, EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE, Blocks.END_STONE);
+
 //Stone Cutting
         //Kimberlite
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS, EEBlocks.POLISHED_KIMBERLITE_BRICKS);
@@ -365,5 +393,16 @@ public class EERecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_STAIRS, EEBlocks.SILTSTONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.SILTSTONE_BRICKS, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.SILTSTONE_BRICKS);
+
+        //Smithing
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_HELMET, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_HELMET);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_CHESTPLATE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_CHESTPLATE);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_LEGGINGS, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_LEGGINGS);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_BOOTS, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_BOOTS);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_SWORD, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_SWORD);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_AXE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_AXE);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_PICKAXE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_PICKAXE);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_SHOVEL, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_SHOVEL);
+        offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_HOE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_HOE);
     }
 }

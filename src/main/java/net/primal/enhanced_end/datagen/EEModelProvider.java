@@ -97,7 +97,7 @@ public class EEModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        //Clitanium Items
+        //Clitanium
         itemModelGenerator.register(EEItems.CLITANIUM, Models.GENERATED);
         itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) EEItems.CLITANIUM_CHESTPLATE));
@@ -108,5 +108,18 @@ public class EEModelProvider extends FabricModelProvider {
         itemModelGenerator.register(EEItems.CLITANIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(EEItems.CLITANIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(EEItems.CLITANIUM_HOE, Models.HANDHELD);
+        //Endimintium
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_SCRAP, Models.GENERATED);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.ENDIMINTIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.ENDIMINTIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.ENDIMINTIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) EEItems.ENDIMINTIUM_BOOTS));
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(EEItems.ENDIMINTIUM_HOE, Models.HANDHELD);
     }
 }

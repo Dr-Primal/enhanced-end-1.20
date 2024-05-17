@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-16T00:54:42.0747955	Enhanced End/Tags for minecraft:item
+// 1.20.1	2024-05-16T22:20:22.5216924	Enhanced End/Tags for minecraft:item
 309dea9977f8b150aa000a1d232f84883fc85731 data\minecraft\tags\items\stone_buttons.json
 87661255e6a6e4ff80d638df69bd411bb8cf5792 data\minecraft\tags\items\stone_tool_materials.json
 c88f0606980d787161772e4d467835fb611818d1 data\minecraft\tags\items\wooden_doors.json
@@ -9,17 +9,17 @@ f059593a5ffd4a191f4c0f8f075372ae4408f5e8 data\minecraft\tags\items\wooden_slabs.
 4171c7606a07929cac06d447719855c42cee9f2e data\minecraft\tags\items\wooden_stairs.json
 4bc7c24654bfc898554c6e8129f4b6cc3af92900 data\minecraft\tags\items\wooden_buttons.json
 1db4f3fbf3a786b9f3d6f9d3067586351a209cc4 data\enhanced_end\tags\items\midnight_stems.json
-8d7cd048bbaff2db72c62ee0555d7b360e5b9294 data\minecraft\tags\items\hoes.json
+92e0c8153389a22c14df5c4423b8732ddd255c62 data\minecraft\tags\items\hoes.json
 e758dbf619ec30274d17c3628abe978e4f8474a8 data\minecraft\tags\items\wooden_fences.json
 76b8c50b01e7ec4310eca9936109793acbe2d24c data\minecraft\tags\items\hanging_signs.json
 91210669bb350388ad270ed1fe9d4b6a7cbf60e4 data\minecraft\tags\items\stairs.json
-3e5088a8c590a3d8ef9adc873f6873bca002a5c3 data\minecraft\tags\items\trimmable_armor.json
+e489470d7638c135149234b66f5ec680eef1b16a data\minecraft\tags\items\trimmable_armor.json
 3f130ccbc4b416b1458eab879e98a29af126f6dc data\minecraft\tags\items\wooden_pressure_plates.json
 469ec46842c29b73e1df02f38e759941740fddc2 data\minecraft\tags\items\planks.json
-5107510c0a6150da521189194bc359d4eeb64ff3 data\minecraft\tags\items\pickaxes.json
-f5265564b8f4f3992ab64de63163426c35a4b6f9 data\minecraft\tags\items\shovels.json
-6d371a767b3338e1382bc62979b36e57a2cce52c data\minecraft\tags\items\swords.json
-7a4bea3d79efd30336c411aebb6d9fea2dca1a09 data\minecraft\tags\items\axes.json
+33184832f2a032f987b598fcd9c1307eeab048c8 data\minecraft\tags\items\pickaxes.json
+b8db7a6e1fdb40dea64ba9f58c5beb3879aa0518 data\minecraft\tags\items\shovels.json
+7f3b495f05ca4ce697e52643e8aa836eba82080d data\minecraft\tags\items\swords.json
+b1587e4532b60645598bceb29351812731c4658e data\minecraft\tags\items\axes.json
 70567e1544b3cf826be54d5bfb17f768cdae5b88 data\enhanced_end\tags\items\corlite_stems.json
 9f157f9edcd2fef3fae4d5f156106f369377d536 data\minecraft\tags\items\completes_find_tree_tutorial.json
 902c9a93d20b59e2159c34ccc80873bcd857af65 data\minecraft\tags\items\wooden_trapdoors.json

@@ -43,8 +43,6 @@
   "item.enhanced_end.diamond_fragment": "Diamond Fragment",
   "item.enhanced_end.ender_matter_bucket": "Ender Matter in a Bucket",
 
-  "item.enhanced_end.endimintium_bow": "Endimintium Bow",
-  "item.enhanced_end.endimintium_crossbow": "Endimintium Crossbow(WIP)",
   "item.enhanced_end.endimintium_sword": "Endimintium Sword",
   "item.enhanced_end.endimintium_axe": "Endimintium Axe",
   "item.enhanced_end.endimintium_pickaxe": "Endimintium Pickaxe",
@@ -55,6 +53,12 @@
   "item.enhanced_end.endimintium_chestplate": "Endimintium Chestplate",
   "item.enhanced_end.endimintium_leggings": "Endimintium Leggings",
   "item.enhanced_end.endimintium_boots": "Endimintium Boots",
+
+  "upgrade.minecraft.endimintium_upgrade": "Endimintium Upgrade",
+  "item.minecraft.smithing_template.endimintium_upgrade.additions_slot_description": "Add Endimintium Ingot",
+  "item.minecraft.smithing_template.endimintium_upgrade.applies_to": "Endimintium Equipment",
+  "item.minecraft.smithing_template.endimintium_upgrade.base_slot_description": "Add netherite armor, weapon, or tool",
+  "item.minecraft.smithing_template.endimintium_upgrade.ingredients": "Endimintium Ingot",
 
   "item.enhanced_end.clitanium_bow": "Clitanium Bow",
   "item.enhanced_end.clitanium_crossbow": "Clitanium Crossbow(WIP)",

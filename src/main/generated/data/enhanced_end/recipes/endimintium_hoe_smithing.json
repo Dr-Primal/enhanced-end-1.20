@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhanced_end:endimintium_ingot"
+  },
+  "base": {
+    "item": "enhanced_end:clitanium_hoe"
+  },
+  "result": {
+    "item": "enhanced_end:endimintium_hoe"
+  },
+  "template": {
+    "item": "enhanced_end:endimintium_upgrade_smithing_template"
+  }
+}

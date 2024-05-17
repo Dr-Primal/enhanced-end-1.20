@@ -10,8 +10,11 @@ import net.primal.enhanced_end.EnhancedEnd;
 import java.util.function.Supplier;
 
 public enum EEArmorMaterials implements ArmorMaterial {
-    CLITANIUM("clitanium", 35, new int[] { 3, 8, 6, 3 }, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2f, 0.0f, () -> Ingredient.ofItems(EEItems.CLITANIUM));
+    CLITANIUM("clitanium", 33, new int[] {3, 8, 6, 3}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5f, 0.25f, () -> Ingredient.ofItems(EEItems.CLITANIUM)),
+
+    ENDIMINTIUM("endimintium", 40, new int[] {4, 10, 7, 4}, 18,
+    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4f, 0.25f, () -> Ingredient.ofItems(EEItems.ENDIMINTIUM_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

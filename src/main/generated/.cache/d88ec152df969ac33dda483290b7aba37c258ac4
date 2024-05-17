@@ -1,11 +1,11 @@
-// 1.20.1	2024-05-16T00:54:42.0938126	Enhanced End/Tags for minecraft:block
+// 1.20.1	2024-05-16T22:20:22.5346967	Enhanced End/Tags for minecraft:block
 f059593a5ffd4a191f4c0f8f075372ae4408f5e8 data\minecraft\tags\blocks\wooden_slabs.json
 c88f0606980d787161772e4d467835fb611818d1 data\minecraft\tags\blocks\wooden_doors.json
 4bc7c24654bfc898554c6e8129f4b6cc3af92900 data\minecraft\tags\blocks\wooden_buttons.json
 e758dbf619ec30274d17c3628abe978e4f8474a8 data\minecraft\tags\blocks\fences.json
 902c9a93d20b59e2159c34ccc80873bcd857af65 data\minecraft\tags\blocks\wooden_trapdoors.json
-3203098811a50a49c0ae96546563dabdc6c099b7 data\minecraft\tags\blocks\mineable\pickaxe.json
 719aea73bc986793d73b42aa3fbb57fd78488009 data\minecraft\tags\blocks\stone_pressure_plates.json
+3203098811a50a49c0ae96546563dabdc6c099b7 data\minecraft\tags\blocks\mineable\pickaxe.json
 34b1ba00fa7af8179fd7574e7157b25516b4247d data\minecraft\tags\blocks\walls.json
 309dea9977f8b150aa000a1d232f84883fc85731 data\minecraft\tags\blocks\buttons.json
 e23cd0d7bfce22420c3dd76e80d4e37e30a22dbd data\minecraft\tags\blocks\fence_gates.json

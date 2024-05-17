@@ -126,21 +126,27 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(EEBlocks.SILTSTONE_BRICK_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(EEItems.CLITANIUM_HELMET, EEItems.CLITANIUM_CHESTPLATE, EEItems.CLITANIUM_LEGGINGS, EEItems.CLITANIUM_BOOTS);
+                .add(EEItems.CLITANIUM_HELMET, EEItems.CLITANIUM_CHESTPLATE, EEItems.CLITANIUM_LEGGINGS, EEItems.CLITANIUM_BOOTS)
+                .add(EEItems.ENDIMINTIUM_HELMET, EEItems.ENDIMINTIUM_CHESTPLATE, EEItems.ENDIMINTIUM_LEGGINGS, EEItems.ENDIMINTIUM_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(EEItems.CLITANIUM_SWORD);
+                .add(EEItems.CLITANIUM_SWORD)
+                .add(EEItems.ENDIMINTIUM_SWORD);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(EEItems.CLITANIUM_PICKAXE);
+                .add(EEItems.CLITANIUM_PICKAXE)
+                .add(EEItems.ENDIMINTIUM_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(EEItems.CLITANIUM_AXE);
+                .add(EEItems.CLITANIUM_AXE)
+                .add(EEItems.ENDIMINTIUM_AXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(EEItems.CLITANIUM_SHOVEL);
+                .add(EEItems.CLITANIUM_SHOVEL)
+                .add(EEItems.ENDIMINTIUM_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(EEItems.CLITANIUM_HOE);
+                .add(EEItems.CLITANIUM_HOE)
+                .add(EEItems.ENDIMINTIUM_HOE);
     }
 }

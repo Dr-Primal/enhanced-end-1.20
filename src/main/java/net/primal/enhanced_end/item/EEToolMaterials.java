@@ -1,13 +1,16 @@
 package net.primal.enhanced_end.item;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum EEToolMaterial implements ToolMaterial {
-    CLITANIUM(3,1700, 8.5f, 3.0f, 12,
-            () -> Ingredient.ofItems(EEItems.CLITANIUM));
+public enum EEToolMaterials implements ToolMaterial {
+    CLITANIUM(MiningLevels.DIAMOND,1561, 8.0f, 3f, 12,
+            () -> Ingredient.ofItems(EEItems.CLITANIUM)),
+    ENDIMINTIUM(5,3031, 10.0f, 6.0f, 18,
+            () -> Ingredient.ofItems(EEItems.ENDIMINTIUM_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -16,7 +19,7 @@ public enum EEToolMaterial implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
- EEToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attckDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+ EEToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attckDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

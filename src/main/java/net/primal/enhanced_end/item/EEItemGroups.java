@@ -107,6 +107,19 @@ public class EEItemGroups {
                             entries.add(EEItems.CLITANIUM_CHESTPLATE);
                             entries.add(EEItems.CLITANIUM_LEGGINGS);
                             entries.add(EEItems.CLITANIUM_BOOTS);
+
+                            entries.add(EEItems.ENDIMINTIUM_SCRAP);
+                            entries.add(EEItems.ENDIMINTIUM_INGOT);
+                            entries.add(EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE);
+                            entries.add(EEItems.ENDIMINTIUM_SWORD);
+                            entries.add(EEItems.ENDIMINTIUM_PICKAXE);
+                            entries.add(EEItems.ENDIMINTIUM_AXE);
+                            entries.add(EEItems.ENDIMINTIUM_SHOVEL);
+                            entries.add(EEItems.ENDIMINTIUM_HOE);
+                            entries.add(EEItems.ENDIMINTIUM_HELMET);
+                            entries.add(EEItems.ENDIMINTIUM_CHESTPLATE);
+                            entries.add(EEItems.ENDIMINTIUM_LEGGINGS);
+                            entries.add(EEItems.ENDIMINTIUM_BOOTS);
                         }).build());
 
 
