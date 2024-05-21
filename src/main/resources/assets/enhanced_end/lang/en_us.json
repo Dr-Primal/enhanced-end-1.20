@@ -78,8 +78,8 @@
   "entity.enhanced_end.enhanced_enderman": "Enhanced Enderman",
   "item.enhanced_end.enhanced_enderman_spawn_egg": "Enhanced Enderman Spawn Egg",
 
-  "entity.enhanced_end.allamite": "Allamite",
-  "item.enhanced_end.allamite_spawn_egg": "Allamite Spawn Egg",
+  "entity.enhanced_end.ender_bull": "Ender Bull",
+  "item.enhanced_end.ender_bull_spawn_egg": "Ender Bull Egg",
 
   "entity.enhanced_end.seaspray": "Seaspray",
   "item.enhanced_end.seaspray_spawn_egg": "Seaspray Spawn Egg",
@@ -97,13 +97,13 @@
   "item.enhanced_end.bulwark_sentinel_spawn_egg": "Sentinel Spawn Egg",
 
 
-  "item.enhanced_end.raw_allam": "Raw Allam",
-  "item.enhanced_end.cooked_allam": "Cooked Allam",
+  "item.enhanced_end.raw_ender_bull": "Raw Ender Bull",
+  "item.enhanced_end.cooked_ender_bull": "Cooked Ender Bull",
   "item.enhanced_end.eneria_speck": "Eneria Speck",
 
   "item.enhanced_end.reinforced_shard": "Reinforced Shard",
   "item.enhanced_end.reinforced_nether_star": "Reinforced Nether Star",
-  "item.enhanced_end.allamite_hide": "Allamite Hide",
+  "item.enhanced_end.ender_bull_hide": "Ender Bull Hide",
   "item.enhanced_end.sentry_disk": "Sentry Disk",
   "item.enhanced_end.shadow_shard": "Shadow Shard",
   "item.enhanced_end.enhanced_pearl": "Enhanced Pearl",
@@ -202,8 +202,8 @@
   "block.enhanced_end.laristone_stairs": "Laristone Stairs",
   "block.enhanced_end.laristone_slab": "Laristone Slab",
   "block.enhanced_end.laristone_wall": "Laristone Wall",
-
-
+  "block.enhanced_end.laristone_button": "Laristone Button",
+  "block.enhanced_end.laristone_pressure_plate": "Laristone Pressure Plate",
   "block.enhanced_end.laristone_bricks": "Laristone Bricks",
   "block.enhanced_end.laristone_brick_stairs": "Laristone Brick Stairs",
   "block.enhanced_end.laristone_brick_slab": "Laristone Brick Slab",
@@ -211,16 +211,16 @@
 
 
 
-  "block.enhanced_end.midnight_end_stone": "Midnight End Stone",
-  "block.enhanced_end.corlite_end_stone": "Corlite End Stone",
+  "block.enhanced_end.midnight_nylium": "Midnight Nylium",
+  "block.enhanced_end.corlite_nylium": "Corlite Nylium",
 
 
   "block.enhanced_end.midnight_mushroom": "Midnight Mushroom",
   "block.enhanced_end.corlite_mushroom": "Corlite Mushroom",
   "block.enhanced_end.potted_midnight_mushroom": "Potted Midnight Mushroom",
   "block.enhanced_end.potted_corlite_mushroom": "Potted Corlite Mushroom",
-  "block.enhanced_end.midnight_blots": "Midnight Blots",
-  "block.enhanced_end.corlite_blots": "Corlite Blots",
+  "block.enhanced_end.midnight_mushroom_cap": "Midnight Mushroom Cap",
+  "block.enhanced_end.corlite_mushroom_cap": "Corlite Mushroom Cap",
 
   "block.enhanced_end.midnight_fescus": "Midnight Fescus",
   "block.enhanced_end.endium_rhizome": "Endium Rhizome",
@@ -228,7 +228,7 @@
 
 
   "block.enhanced_end.endium_soil": "Endium Soil",
-  "block.enhanced_end.endium_mushroom_block": "Endium Mushroom Block",
+  "block.enhanced_end.endium_mushroom_cap": "Endium Mushroom Cap",
   "block.enhanced_end.endium_mushroom": "Endium Mushroom",
   "block.enhanced_end.potted_endium_mushroom": "Potted Endium Mushroom",
   "block.enhanced_end.hardened_ender_matter": "Hardened Ender Matter",

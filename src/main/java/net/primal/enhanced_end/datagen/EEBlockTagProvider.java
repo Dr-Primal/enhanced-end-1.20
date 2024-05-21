@@ -125,7 +125,26 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(EEBlocks.SILTSTONE_BRICKS)
                 .add(EEBlocks.SILTSTONE_BRICK_STAIRS)
                 .add(EEBlocks.SILTSTONE_BRICK_SLAB)
-                .add(EEBlocks.SILTSTONE_BRICK_WALL);
+                .add(EEBlocks.SILTSTONE_BRICK_WALL)
+                .add(EEBlocks.MIDNIGHT_NYLIUM)
+                .add(EEBlocks.CORLITE_NYLIUM)
+                .add(EEBlocks.END_TANZANITE_ORE)
+                .add(EEBlocks.END_CLITANIUM_ORE)
+                .add(EEBlocks.RAW_TANZANITE_BLOCK)
+                .add(EEBlocks.TANZANITE_BLOCK)
+                .add(EEBlocks.CLITANIUM_BLOCK)
+                .add(EEBlocks.ENDIMINTIUM_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+        .add(EEBlocks.ENDIMINTIUM_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(EEBlocks.MIDNIGHT_MUSHROOM_CAP)
+                .add(EEBlocks.CORLITE_MUSHROOM_CAP)
+                .add(EEBlocks.ENDIUM_MUSHROOM_CAP);
+
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(EEBlocks.ENDIUM_SOIL);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(EEBlocks.KIMBERLITE_STAIRS)
@@ -164,5 +183,16 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(EEBlocks.KIMBERLITE_PRESSURE_PLATE)
                 .add(EEBlocks.LARISTONE_PRESSURE_PLATE)
                 .add(EEBlocks.SILTSTONE_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.NYLIUM)
+                .add(EEBlocks.MIDNIGHT_NYLIUM)
+                .add(EEBlocks.CORLITE_NYLIUM);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(EEBlocks.MIDNIGHT_MUSHROOM_CAP)
+                .add(EEBlocks.CORLITE_MUSHROOM_CAP);
+
+        getOrCreateTagBuilder(BlockTags.SMELTS_TO_GLASS)
+                .add(EEBlocks.ENDIUM_SOIL);
     }
 }

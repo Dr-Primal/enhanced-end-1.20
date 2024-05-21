@@ -15,7 +15,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.primal.enhanced_end.EnhancedEnd;
+import net.primal.enhanced_end.block.custom.EENyliumBlock;
 
 public class EEBlocks {
     //Midnight Wood Set
@@ -125,63 +127,63 @@ public class EEBlocks {
     //Corlite Wood Set
     public static final Block CORLITE_STEM = registerBlock("corlite_stem",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_STEM)
-                    .mapColor(MapColor.OAK_TAN)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block CORLITE_HYPHAE = registerBlock("corlite_hyphae",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_HYPHAE)
-                    .mapColor(MapColor.OAK_TAN)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block STRIPPED_CORLITE_STEM = registerBlock("stripped_corlite_stem",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CRIMSON_STEM)
-                    .mapColor(MapColor.PURPLE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block STRIPPED_CORLITE_HYPHAE = registerBlock("stripped_corlite_hyphae",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CRIMSON_HYPHAE)
-                    .mapColor(MapColor.PURPLE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block CORLITE_PLANKS = registerBlock("corlite_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block CORLITE_STAIRS = registerBlock("corlite_stairs",
             new StairsBlock(EEBlocks.CORLITE_PLANKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CRIMSON_STAIRS)
-                            .mapColor(MapColor.WHITE)
+                            .mapColor(MapColor.IRON_GRAY)
                             .strength(2f)));
     public static final Block CORLITE_SLAB = registerBlock("corlite_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_SLAB)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block CORLITE_BUTTON = registerBlock("corlite_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_BUTTON)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(0.5f)
                     .collidable(false),
                     BlockSetType.CRIMSON, 30, true));
     public static final Block CORLITE_PRESSURE_PLATE = registerBlock("corlite_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(Blocks.CRIMSON_PRESSURE_PLATE)
-                            .mapColor(MapColor.WHITE)
+                            .mapColor(MapColor.IRON_GRAY)
                             .strength(0.5f),
                     BlockSetType.CRIMSON));
     public static final Block CORLITE_FENCE = registerBlock("corlite_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)));
     public static final Block CORLITE_FENCE_GATE = registerBlock("corlite_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE_GATE)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f),
                     WoodType.CRIMSON));
     public static final Block CORLITE_DOOR = registerBlock("corlite_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_DOOR)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)
                     .nonOpaque(),
                     BlockSetType.CRIMSON));
     public static final Block CORLITE_TRAPDOOR = registerBlock("corlite_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_TRAPDOOR)
-                    .mapColor(MapColor.WHITE)
+                    .mapColor(MapColor.IRON_GRAY)
                     .strength(2f)
                     .nonOpaque(),
                     BlockSetType.CRIMSON));
@@ -196,27 +198,27 @@ public class EEBlocks {
                     new Identifier(EnhancedEnd.MOD_ID, "corlite_standing_sign"),
                     new TerraformSignBlock(CORLITE_SIGN_TEXTURE,
                             FabricBlockSettings.copy(Blocks.ACACIA_SIGN)
-                                    .mapColor(MapColor.WHITE)));
+                                    .mapColor(MapColor.IRON_GRAY)));
     public static final Block WALL_CORLITE_SIGN =
             Registry.register(Registries.BLOCK,
                     new Identifier(EnhancedEnd.MOD_ID, "corlite_wall_sign"),
                     new TerraformWallSignBlock(CORLITE_SIGN_TEXTURE,
                             FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_SIGN)
                                     .dropsLike(STANDING_CORLITE_SIGN)
-                                    .mapColor(MapColor.WHITE)));
+                                    .mapColor(MapColor.IRON_GRAY)));
     public static final Block HANGING_CORLITE_SIGN =
             Registry.register(Registries.BLOCK,
                     new Identifier(EnhancedEnd.MOD_ID, "corlite_hanging_sign"),
                     new TerraformHangingSignBlock(CORLITE_HANGING_SIGN_TEXTURE, CORLITE_HANGING_GUI_SIGN_TEXTURE,
                             FabricBlockSettings.copyOf(Blocks.ACACIA_HANGING_SIGN)
-                                    .mapColor(MapColor.WHITE)));
+                                    .mapColor(MapColor.IRON_GRAY)));
     public static final Block WALL_HANGING_CORLITE_SIGN =
             Registry.register(Registries.BLOCK,
                     new Identifier(EnhancedEnd.MOD_ID, "corlite_wall_hanging_sign"),
                     new TerraformWallHangingSignBlock(CORLITE_HANGING_SIGN_TEXTURE, CORLITE_HANGING_GUI_SIGN_TEXTURE,
                             FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_HANGING_SIGN)
                                     .dropsLike(HANGING_CORLITE_SIGN)
-                                    .mapColor(MapColor.WHITE)));
+                                    .mapColor(MapColor.IRON_GRAY)));
     public static final BlockFamily CORLITE_FAMILY =
             BlockFamilies.register(EEBlocks.CORLITE_PLANKS)
                     .sign(EEBlocks.STANDING_CORLITE_SIGN, EEBlocks.WALL_CORLITE_SIGN)
@@ -310,6 +312,47 @@ public class EEBlocks {
                     .sounds(BlockSoundGroup.STONE)
                     .solid()));
 
+    //Nylium Blocks
+    public static final Block MIDNIGHT_NYLIUM = registerBlock("midnight_nylium",
+            new EENyliumBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_NYLIUM)
+                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .requiresTool()
+                    .strength(3.0f, 9.0f)
+                    .sounds(BlockSoundGroup.NYLIUM)
+                    .solid()));
+
+    public static final Block CORLITE_NYLIUM = registerBlock("corlite_nylium",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.WARPED_NYLIUM)
+                    .mapColor(MapColor.IRON_GRAY)
+                    .requiresTool()
+                    .strength(3.0f, 9.0f)
+                    .sounds(BlockSoundGroup.NYLIUM)
+                    .solid()));
+
+    public static final Block ENDIUM_SOIL = registerBlock("endium_soil",
+            new EENyliumBlock(FabricBlockSettings.copy(Blocks.SAND)
+                    .mapColor(MapColor.GREEN)
+                    .strength(0.5f)
+                    .sounds(BlockSoundGroup.SOUL_SOIL)));
+
+    //Mushroom Caps
+    public static final Block MIDNIGHT_MUSHROOM_CAP = registerBlock("midnight_mushroom_cap",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK)
+                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .nonOpaque()));
+    public static final Block CORLITE_MUSHROOM_CAP = registerBlock("corlite_mushroom_cap",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)
+                    .mapColor(MapColor.GRAY)
+                    .nonOpaque()));
+    public static final Block ENDIUM_MUSHROOM_CAP = registerBlock("endium_mushroom_cap",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)
+                    .mapColor(MapColor.LIME)
+                    .nonOpaque()));
+
+    //Saplings
+
+
+
     //Laristone Stone Set
     public static final Block LARISTONE = registerBlock("laristone",
             new Block(FabricBlockSettings.copy(Blocks.STONE)
@@ -376,27 +419,27 @@ public class EEBlocks {
     //Siltstone
     public static final Block SILTSTONE = registerBlock("siltstone",
             new Block(FabricBlockSettings.copy(Blocks.STONE)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block SILTSTONE_STAIRS = registerBlock("siltstone_stairs",
             new StairsBlock(SILTSTONE.getDefaultState(), FabricBlockSettings.copyOf(SILTSTONE)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
     public static final Block SILTSTONE_SLAB = registerBlock("siltstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block SILTSTONE_BUTTON = registerBlock("siltstone_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .strength(0.5f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)
                     .collidable(false),
@@ -404,7 +447,7 @@ public class EEBlocks {
     public static final Block SILTSTONE_PRESSURE_PLATE = registerBlock("siltstone_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
                     FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
-                            .mapColor(MapColor.PALE_YELLOW)
+                            .mapColor(MapColor.YELLOW)
                             .requiresTool()
                             .strength(0.5f)
                             .sounds(BlockSoundGroup.POINTED_DRIPSTONE),
@@ -412,58 +455,107 @@ public class EEBlocks {
 
     public static final Block COBBLED_SILTSTONE = registerBlock("cobbled_siltstone",
             new Block(FabricBlockSettings.copy(Blocks.COBBLESTONE)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block COBBLED_SILTSTONE_STAIRS = registerBlock("cobbled_siltstone_stairs",
             new StairsBlock(COBBLED_SILTSTONE.getDefaultState(), FabricBlockSettings.copyOf(COBBLED_SILTSTONE)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
     public static final Block COBBLED_SILTSTONE_SLAB = registerBlock("cobbled_siltstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block COBBLED_SILTSTONE_WALL = registerBlock("cobbled_siltstone_wall",
             new WallBlock(FabricBlockSettings.copyOf(EEBlocks.COBBLED_SILTSTONE).solid()
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block SILTSTONE_BRICKS = registerBlock("siltstone_bricks",
             new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block SILTSTONE_BRICK_STAIRS = registerBlock("siltstone_brick_stairs",
             new StairsBlock(SILTSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(SILTSTONE_BRICKS)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
     public static final Block SILTSTONE_BRICK_SLAB = registerBlock("siltstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)));
 
     public static final Block SILTSTONE_BRICK_WALL = registerBlock("siltstone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(EEBlocks.SILTSTONE_BRICKS)
-                    .mapColor(MapColor.PALE_YELLOW)
+                    .mapColor(MapColor.YELLOW)
                     .requiresTool()
                     .strength(1.5f, 3.0f)
                     .sounds(BlockSoundGroup.POINTED_DRIPSTONE)
                     .solid()));
+
+    //Ore Blocks
+    public static final Block END_TANZANITE_ORE = registerBlock("end_tanzanite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(3.0f, 9.0f), UniformIntProvider.create(3, 7)));
+    public static final Block END_CLITANIUM_ORE = registerBlock("end_clitanium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .requiresTool()
+                    .strength(3.0f, 9.0f), UniformIntProvider.create(3, 7)));
+
+    public static final Block RAW_TANZANITE_BLOCK = registerBlock("raw_tanzanite_block",
+            new Block(FabricBlockSettings.copy(Blocks.RAW_IRON_BLOCK)
+                    .mapColor(MapColor.PALE_PURPLE)
+                    .requiresTool()
+                    .strength(5f, 6f)
+                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)
+                    .mapColor(MapColor.PALE_PURPLE)
+                    .requiresTool()
+                    .strength(5f, 6f)
+                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block CLITANIUM_BLOCK = registerBlock("clitanium_block",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)
+                    .mapColor(MapColor.IRON_GRAY)
+                    .requiresTool()
+                    .strength(5f, 6f)
+                    .sounds(BlockSoundGroup.COPPER)));
+    public static final Block ENDIMINTIUM_BLOCK = registerBlock("endimintium_block",
+            new Block(FabricBlockSettings.copy(Blocks.NETHERITE_BLOCK)
+                    .mapColor(MapColor.WHITE_GRAY)
+                    .requiresTool()
+                    .strength(50f, 1200f)
+                    .sounds(BlockSoundGroup.NETHERITE)));
+
+    //Plant Blocks
+    /*public static final Block MIDNIGHT_MUSHROOM = registerBlock("midnight_mushroom",
+            new SaplingBlock(new AutumnMapleSaplingGenerator(),
+                    FabricBlockSettings.copyOf(Blocks.CRIMSON_FUNGUS)
+                            .mapColor(MapColor.TERRACOTTA_ORANGE)
+                            .sounds(BlockSoundGroup.FUNGUS)));
+    public static final Block CORLITE_MUSHROOM = registerBlock("corlite_mushroom",
+            new SaplingBlock(new SaplingGeneratoR(),
+                    FabricBlockSettings.copyOf(Blocks.CRIMSON_FUNGUS)
+                            .mapColor(MapColor.TERRACOTTA_ORANGE)
+                            .sounds(BlockSoundGroup.FUNGUS)));*/
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(EnhancedEnd.MOD_ID, name),

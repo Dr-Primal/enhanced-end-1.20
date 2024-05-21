@@ -10,12 +10,15 @@ import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.EEItems;
 import net.primal.enhanced_end.util.EETags;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class EERecipeProvider extends FabricRecipeProvider {
@@ -226,6 +229,9 @@ public class EERecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_SLAB, EEBlocks.SILTSTONE_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EEBlocks.SILTSTONE_BRICK_WALL, EEBlocks.SILTSTONE_BRICKS);
 
+        //Diamond Fragment
+        offer2x2CompactingRecipe(exporter, RecipeCategory.MISC, Items.DIAMOND, EEItems.DIAMOND_FRAGMENT);
+
         //Clitanium
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, EEItems.CLITANIUM_HELMET, 1)
                 .pattern("RRR")
@@ -326,9 +332,15 @@ public class EERecipeProvider extends FabricRecipeProvider {
                         conditionsFromItem(EEItems.CLITANIUM))
                 .criterion(hasItem(EEItems.ENDIMINTIUM_SCRAP),
                         conditionsFromItem(EEItems.ENDIMINTIUM_SCRAP))
-                .offerTo(exporter, new Identifier(getRecipeName(EEItems.ENDIMINTIUM_INGOT)));
+                .offerTo(exporter, new Identifier(("endimintium_ingot_from_endimintium_scrap")));
 
         offerSmithingTemplateCopyingRecipe(exporter, EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE, Blocks.END_STONE);
+
+        //Ore Blocks
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.RAW_TANZANITE, RecipeCategory.DECORATIONS, EEBlocks.RAW_TANZANITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.TANZANITE, RecipeCategory.DECORATIONS, EEBlocks.TANZANITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.CLITANIUM, RecipeCategory.DECORATIONS, EEBlocks.CLITANIUM_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.ENDIMINTIUM_INGOT, RecipeCategory.DECORATIONS, EEBlocks.ENDIMINTIUM_BLOCK);
 
 //Stone Cutting
         //Kimberlite
@@ -404,5 +416,13 @@ public class EERecipeProvider extends FabricRecipeProvider {
         offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_PICKAXE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_PICKAXE);
         offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_SHOVEL, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_SHOVEL);
         offerEndimintiumUpgradeRecipe(exporter, EEItems.CLITANIUM_HOE, RecipeCategory.COMBAT, EEItems.ENDIMINTIUM_HOE);
+
+        //Smelting
+        offerFoodCookingRecipe(exporter, RecipeType.SMOKING.toString(), RecipeSerializer.SMOKING, 100, EEItems.RAW_ENDER_BULL, EEItems.COOKED_ENDER_BULL, 0.35f);
+        offerFoodCookingRecipe(exporter, RecipeType.CAMPFIRE_COOKING.toString(), RecipeSerializer.CAMPFIRE_COOKING, 600, EEItems.RAW_ENDER_BULL, EEItems.COOKED_ENDER_BULL, 0.35f);
+        offerSmelting(exporter, List.of(EEItems.RAW_ENDER_BULL), RecipeCategory.FOOD, EEItems.COOKED_ENDER_BULL, 0.35f, 200, "enhanced_end_items");
+
+        offerSmelting(exporter, List.of(EEItems.RAW_TANZANITE), RecipeCategory.MISC, EEItems.TANZANITE, 0.7f, 200, "enhanced_end_items");
+        offerBlasting(exporter, List.of(EEItems.RAW_TANZANITE), RecipeCategory.MISC, EEItems.TANZANITE, 0.7f, 100, "enhanced_end_items");
     }
 }

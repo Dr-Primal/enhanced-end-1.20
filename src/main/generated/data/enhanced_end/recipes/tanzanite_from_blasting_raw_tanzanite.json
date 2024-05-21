@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "enhanced_end_items",
+  "ingredient": {
+    "item": "enhanced_end:raw_tanzanite"
+  },
+  "result": "enhanced_end:tanzanite"
+}

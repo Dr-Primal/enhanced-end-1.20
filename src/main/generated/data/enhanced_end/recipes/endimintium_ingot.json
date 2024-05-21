@@ -1,21 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "E": {
-      "item": "enhanced_end:endimintium_scrap"
-    },
-    "R": {
-      "item": "enhanced_end:clitanium"
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "enhanced_end:endimintium_block"
     }
-  },
-  "pattern": [
-    "RRR",
-    "REE",
-    "EE "
   ],
   "result": {
+    "count": 9,
     "item": "enhanced_end:endimintium_ingot"
-  },
-  "show_notification": true
+  }
 }

@@ -3,10 +3,7 @@ package net.primal.enhanced_end.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.EEItems;
@@ -91,8 +88,23 @@ public class EEModelProvider extends FabricModelProvider {
         siltstoneBrickPool.slab(EEBlocks.SILTSTONE_BRICK_SLAB);
         siltstoneBrickPool.wall(EEBlocks.SILTSTONE_BRICK_WALL);
 
-        //OreBlocks
+        //Nylium
+        blockStateModelGenerator.registerCubeWithCustomTextures(EEBlocks.MIDNIGHT_NYLIUM, Blocks.END_STONE, TextureMap::frontSideWithCustomBottom);
+        blockStateModelGenerator.registerCubeWithCustomTextures(EEBlocks.CORLITE_NYLIUM, Blocks.END_STONE, TextureMap::frontSideWithCustomBottom);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.ENDIUM_SOIL);
+        //Mushroom Caps
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.MIDNIGHT_MUSHROOM_CAP);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.CORLITE_MUSHROOM_CAP);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.ENDIUM_MUSHROOM_CAP);
 
+
+        //Ore and Ore Blocks
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.END_TANZANITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.END_CLITANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.RAW_TANZANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.TANZANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.CLITANIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.ENDIMINTIUM_BLOCK);
     }
 
     @Override
@@ -121,5 +133,18 @@ public class EEModelProvider extends FabricModelProvider {
         itemModelGenerator.register(EEItems.ENDIMINTIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(EEItems.ENDIMINTIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(EEItems.ENDIMINTIUM_HOE, Models.HANDHELD);
+        //Diamond Fragment
+        itemModelGenerator.register(EEItems.DIAMOND_FRAGMENT, Models.GENERATED);
+        //Tanzanite
+        itemModelGenerator.register(EEItems.TANZANITE, Models.GENERATED);
+        itemModelGenerator.register(EEItems.RAW_TANZANITE, Models.GENERATED);
+        //Foods
+        itemModelGenerator.register(EEItems.TANZANITE_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.GOLDEN_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.ENHANCED_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.ENCHANTED_ENHANCED_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.CORRUPTED_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(EEItems.RAW_ENDER_BULL, Models.GENERATED);
+        itemModelGenerator.register(EEItems.COOKED_ENDER_BULL, Models.GENERATED);
     }
 }

@@ -1,10 +1,13 @@
 package net.primal.enhanced_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.primal.enhanced_end.EnhancedEnd;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.custom.EndimintiumSmithingTemplateItem;
@@ -105,6 +108,80 @@ public class EEItems {
             new ArmorItem(EEArmorMaterials.ENDIMINTIUM, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()
                             .fireproof()));
+    //Diamond Fragment
+    public static final Item DIAMOND_FRAGMENT = registerItem("diamond_fragment",
+            new Item(new FabricItemSettings()));
+
+    //Tanzanite
+    public static final Item TANZANITE = registerItem("tanzanite",
+            new Item(new FabricItemSettings()));
+    public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
+            new Item(new FabricItemSettings()));
+
+    //Food Items
+    public static final Item TANZANITE_BEETROOT = registerItem("tanzanite_beetroot",
+            new Item(new FabricItemSettings()
+                    .rarity(Rarity.UNCOMMON)
+                    .maxCount(16)
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.8f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 6000, 0), 1.0f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 6000, 0), 0.5f)
+                            .alwaysEdible().build())));
+    public static final Item GOLDEN_BEETROOT = registerItem("golden_beetroot",
+            new Item(new FabricItemSettings()
+                    .rarity(Rarity.UNCOMMON)
+                    .maxCount(16)
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.8f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 300, 1), 1.0f)
+
+                            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 2400, 1), 1f)
+                            .alwaysEdible().build())));
+    public static final Item ENHANCED_BEETROOT = registerItem("enhanced_beetroot",
+            new Item(new FabricItemSettings()
+                    .maxCount(16)
+                    .rarity(Rarity.RARE)
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(1f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 500, 1), 1f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 500, 1), 0.8f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 500, 9), 0.8f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 500, 0), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 500, 0), 0.6f)
+                            .alwaysEdible().build())));
+    public static final Item ENCHANTED_ENHANCED_BEETROOT = registerItem("enchanted_enhanced_beetroot",
+            new EnchantedGoldenAppleItem(new FabricItemSettings()
+                    .maxCount(16)
+                    .rarity(Rarity.EPIC)
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(1f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1000, 1), 1f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1000, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1000, 0), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1000, 0), 0.8f)
+                            .alwaysEdible().build())));
+    public static final Item CORRUPTED_BEETROOT = registerItem("corrupted_beetroot",
+            new EnchantedGoldenAppleItem(new FabricItemSettings()
+                    .maxCount(16).rarity(Rarity.EPIC)
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(1.5f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 1000, 0), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1000, 0), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1000, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 500, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 50, 5), 0.4f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 500, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 500, 1), 0.6f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 50, 4), 0.4f)
+                            .alwaysEdible().build())));
+
+    public static final Item RAW_ENDER_BULL = registerItem("raw_ender_bull",
+            new Item(new FabricItemSettings()
+                    .food(new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).meat()
+                            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 50, 0), 0.6f)
+                            .build())));
+    public static final Item COOKED_ENDER_BULL = registerItem("cooked_ender_bull",
+            new Item(new FabricItemSettings()
+                    .food(new FoodComponent.Builder().hunger(9).saturationModifier(0.8f).meat()
+                            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 50, 0), 0.2f)
+                            .build())));
 
     /*private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add();

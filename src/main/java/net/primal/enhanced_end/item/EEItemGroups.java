@@ -91,6 +91,22 @@ public class EEItemGroups {
                             entries.add(EEBlocks.SILTSTONE_BRICK_STAIRS);
                             entries.add(EEBlocks.SILTSTONE_BRICK_SLAB);
                             entries.add(EEBlocks.SILTSTONE_BRICK_WALL);
+
+                            entries.add(EEBlocks.END_TANZANITE_ORE);
+                            entries.add(EEBlocks.END_CLITANIUM_ORE);
+                            entries.add(EEBlocks.TANZANITE_BLOCK);
+                            entries.add(EEBlocks.CLITANIUM_BLOCK);
+                            entries.add(EEBlocks.ENDIMINTIUM_BLOCK);
+
+
+                            entries.add(EEBlocks.MIDNIGHT_NYLIUM);
+                            entries.add(EEBlocks.CORLITE_NYLIUM);
+                            entries.add(EEBlocks.ENDIUM_SOIL);
+
+                            entries.add(EEBlocks.MIDNIGHT_MUSHROOM_CAP);
+                            entries.add(EEBlocks.CORLITE_MUSHROOM_CAP);
+                            entries.add(EEBlocks.ENDIUM_MUSHROOM_CAP);
+
                         }).build());
 
         public static final ItemGroup OUTER_WORLD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -120,6 +136,18 @@ public class EEItemGroups {
                             entries.add(EEItems.ENDIMINTIUM_CHESTPLATE);
                             entries.add(EEItems.ENDIMINTIUM_LEGGINGS);
                             entries.add(EEItems.ENDIMINTIUM_BOOTS);
+
+                            entries.add(EEItems.DIAMOND_FRAGMENT);
+                            entries.add(EEItems.TANZANITE);
+                            entries.add(EEItems.RAW_TANZANITE);
+
+                            entries.add(EEItems.TANZANITE_BEETROOT);
+                            entries.add(EEItems.GOLDEN_BEETROOT);
+                            entries.add(EEItems.ENHANCED_BEETROOT);
+                            entries.add(EEItems.ENCHANTED_ENHANCED_BEETROOT);
+                            entries.add(EEItems.CORRUPTED_BEETROOT);
+                            entries.add(EEItems.RAW_ENDER_BULL);
+                            entries.add(EEItems.COOKED_ENDER_BULL);
                         }).build());
 
 

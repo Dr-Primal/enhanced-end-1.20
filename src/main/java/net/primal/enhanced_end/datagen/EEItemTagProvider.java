@@ -2,8 +2,11 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.EEItems;
 import net.primal.enhanced_end.util.EETags;
@@ -148,5 +151,51 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(EEItems.CLITANIUM_HOE)
                 .add(EEItems.ENDIMINTIUM_HOE);
+
+        getOrCreateTagBuilder(ItemTags.NON_FLAMMABLE_WOOD)
+                .add(EEBlocks.MIDNIGHT_PLANKS.asItem())
+                .add(EEBlocks.CORLITE_PLANKS.asItem())
+                .add(EEBlocks.MIDNIGHT_SLAB.asItem())
+                .add(EEBlocks.CORLITE_SLAB.asItem())
+                .add(EEBlocks.MIDNIGHT_STAIRS.asItem())
+                .add(EEBlocks.CORLITE_STAIRS.asItem())
+                .add(EEBlocks.MIDNIGHT_FENCE.asItem())
+                .add(EEBlocks.CORLITE_FENCE.asItem())
+                .add(EEBlocks.MIDNIGHT_FENCE_GATE.asItem())
+                .add(EEBlocks.CORLITE_FENCE_GATE.asItem())
+                .add(EEBlocks.MIDNIGHT_BUTTON.asItem())
+                .add(EEBlocks.CORLITE_BUTTON.asItem())
+                .add(EEBlocks.MIDNIGHT_PRESSURE_PLATE.asItem())
+                .add(EEBlocks.CORLITE_PRESSURE_PLATE.asItem())
+                .add(EEBlocks.MIDNIGHT_DOOR.asItem())
+                .add(EEBlocks.CORLITE_DOOR.asItem())
+                .add(EEBlocks.MIDNIGHT_TRAPDOOR.asItem())
+                .add(EEBlocks.CORLITE_TRAPDOOR.asItem())
+                .add(EEBlocks.STANDING_MIDNIGHT_SIGN.asItem())
+                .add(EEBlocks.WALL_MIDNIGHT_SIGN.asItem())
+                .add(EEBlocks.STANDING_CORLITE_SIGN.asItem())
+                .add(EEBlocks.WALL_CORLITE_SIGN.asItem())
+                .add(EEBlocks.HANGING_MIDNIGHT_SIGN.asItem())
+                .add(EEBlocks.HANGING_CORLITE_SIGN.asItem())
+                .add(EEBlocks.MIDNIGHT_STEM.asItem())
+                .add(EEBlocks.MIDNIGHT_HYPHAE.asItem())
+                .add(EEBlocks.STRIPPED_MIDNIGHT_STEM.asItem())
+                .add(EEBlocks.STRIPPED_MIDNIGHT_HYPHAE.asItem())
+                .add(EEBlocks.CORLITE_STEM.asItem())
+                .add(EEBlocks.CORLITE_HYPHAE.asItem())
+                .add(EEBlocks.STRIPPED_CORLITE_STEM.asItem())
+                .add(EEBlocks.STRIPPED_CORLITE_HYPHAE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LEAVES)
+                .add(EEBlocks.MIDNIGHT_MUSHROOM_CAP.asItem())
+                .add(EEBlocks.CORLITE_MUSHROOM_CAP.asItem())
+                .add(EEBlocks.ENDIUM_MUSHROOM_CAP.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAND)
+                .add(EEBlocks.ENDIUM_SOIL.asItem());
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.ITEM, new Identifier("fabric", "iron_ingots")))
+                .add(EEItems.CLITANIUM);
+
     }
 }

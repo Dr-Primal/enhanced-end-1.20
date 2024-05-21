@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/end_stone",
+    "east": "enhanced_end:block/corlite_nylium_side",
+    "north": "enhanced_end:block/corlite_nylium_front",
+    "particle": "enhanced_end:block/corlite_nylium_front",
+    "south": "enhanced_end:block/corlite_nylium_side",
+    "up": "enhanced_end:block/corlite_nylium_top",
+    "west": "enhanced_end:block/corlite_nylium_front"
+  }
+}

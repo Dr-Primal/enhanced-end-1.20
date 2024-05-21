@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "enhanced_end_items",
+  "ingredient": {
+    "item": "enhanced_end:raw_ender_bull"
+  },
+  "result": "enhanced_end:cooked_ender_bull"
+}

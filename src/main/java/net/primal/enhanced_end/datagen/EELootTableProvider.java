@@ -3,12 +3,31 @@ package net.primal.enhanced_end.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.server.loottable.BlockLootTableGenerator;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Item;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.item.EEItems;
 
 public class EELootTableProvider extends FabricBlockLootTableProvider {
     public EELootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
+    }
+
+    public LootTable.Builder tanzaniteLikeOreDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder<?>) ItemEntry.builder(item)
+                        .apply(SetCountLootFunction
+                                .builder(UniformLootNumberProvider
+                                        .create(2.0f, 3.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 
     @Override
@@ -88,5 +107,21 @@ public class EELootTableProvider extends FabricBlockLootTableProvider {
         addDrop(EEBlocks.SILTSTONE_SLAB, slabDrops(EEBlocks.SILTSTONE_SLAB));
         addDrop(EEBlocks.COBBLED_SILTSTONE_SLAB, slabDrops(EEBlocks.COBBLED_SILTSTONE_SLAB));
         addDrop(EEBlocks.SILTSTONE_BRICK_SLAB, slabDrops(EEBlocks.SILTSTONE_BRICK_SLAB));
+
+        addDrop(EEBlocks.MIDNIGHT_NYLIUM, (Block block) -> this.drops(block, Blocks.END_STONE));
+        addDrop(EEBlocks.CORLITE_NYLIUM, (Block block) -> this.drops(block, Blocks.END_STONE));
+        addDrop(EEBlocks.ENDIUM_SOIL);
+
+        addDrop(EEBlocks.MIDNIGHT_MUSHROOM_CAP, leavesDrops(EEBlocks.MIDNIGHT_MUSHROOM_CAP, EEBlocks.MIDNIGHT_PLANKS, 0.0025f));
+        addDrop(EEBlocks.CORLITE_MUSHROOM_CAP, leavesDrops(EEBlocks.CORLITE_MUSHROOM_CAP, EEBlocks.CORLITE_PLANKS, 0.0025f));//Change to Corlite Mushroom TODO;
+        addDrop(EEBlocks.ENDIUM_MUSHROOM_CAP, leavesDrops(EEBlocks.ENDIUM_MUSHROOM_CAP, EEBlocks.ENDIUM_SOIL, 0.0025f));//Change to Corlite Mushroom TODO;
+
+        addDrop(EEBlocks.END_TANZANITE_ORE, tanzaniteLikeOreDrops(EEBlocks.END_TANZANITE_ORE, EEItems.RAW_TANZANITE));
+        addDrop(EEBlocks.END_CLITANIUM_ORE, oreDrops(EEBlocks.END_CLITANIUM_ORE, EEItems.CLITANIUM));
+
+        addDrop(EEBlocks.RAW_TANZANITE_BLOCK);
+        addDrop(EEBlocks.TANZANITE_BLOCK);
+        addDrop(EEBlocks.CLITANIUM_BLOCK);
+        addDrop(EEBlocks.ENDIMINTIUM_BLOCK);
     }
 }

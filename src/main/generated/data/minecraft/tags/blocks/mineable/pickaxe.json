@@ -37,6 +37,14 @@
     "enhanced_end:siltstone_bricks",
     "enhanced_end:siltstone_brick_stairs",
     "enhanced_end:siltstone_brick_slab",
-    "enhanced_end:siltstone_brick_wall"
+    "enhanced_end:siltstone_brick_wall",
+    "enhanced_end:midnight_nylium",
+    "enhanced_end:corlite_nylium",
+    "enhanced_end:end_tanzanite_ore",
+    "enhanced_end:end_clitanium_ore",
+    "enhanced_end:raw_tanzanite_block",
+    "enhanced_end:tanzanite_block",
+    "enhanced_end:clitanium_block",
+    "enhanced_end:endimintium_block"
   ]
 }

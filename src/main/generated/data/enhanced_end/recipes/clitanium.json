@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "enhanced_end:clitanium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "enhanced_end:clitanium"
+  }
+}

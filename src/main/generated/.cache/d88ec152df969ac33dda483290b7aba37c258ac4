@@ -1,17 +1,23 @@
-// 1.20.1	2024-05-16T22:20:22.5346967	Enhanced End/Tags for minecraft:block
+// 1.20.1	2024-05-20T23:47:17.6502548	Enhanced End/Tags for minecraft:block
 f059593a5ffd4a191f4c0f8f075372ae4408f5e8 data\minecraft\tags\blocks\wooden_slabs.json
 c88f0606980d787161772e4d467835fb611818d1 data\minecraft\tags\blocks\wooden_doors.json
 4bc7c24654bfc898554c6e8129f4b6cc3af92900 data\minecraft\tags\blocks\wooden_buttons.json
 e758dbf619ec30274d17c3628abe978e4f8474a8 data\minecraft\tags\blocks\fences.json
 902c9a93d20b59e2159c34ccc80873bcd857af65 data\minecraft\tags\blocks\wooden_trapdoors.json
+715434ad7d1a01df00e6d6e0b247ececf82cf2c8 data\minecraft\tags\blocks\mineable\pickaxe.json
 719aea73bc986793d73b42aa3fbb57fd78488009 data\minecraft\tags\blocks\stone_pressure_plates.json
-3203098811a50a49c0ae96546563dabdc6c099b7 data\minecraft\tags\blocks\mineable\pickaxe.json
 34b1ba00fa7af8179fd7574e7157b25516b4247d data\minecraft\tags\blocks\walls.json
+297f3ce30bd1f6fd2fca240ca8eea7dcbbbf52c4 data\minecraft\tags\blocks\smelts_to_glass.json
+47a1015a11d0603a4c3b7dd93eb48e22c4db1768 data\minecraft\tags\blocks\nylium.json
 309dea9977f8b150aa000a1d232f84883fc85731 data\minecraft\tags\blocks\buttons.json
 e23cd0d7bfce22420c3dd76e80d4e37e30a22dbd data\minecraft\tags\blocks\fence_gates.json
 ecdb8a78fad8f338cf6e39d99e5b86a412b63b97 data\minecraft\tags\blocks\mineable\axe.json
+43cccfa25cd9e2a55a2f544d2fdb8b7a2e4256db data\minecraft\tags\blocks\mineable\hoe.json
 91210669bb350388ad270ed1fe9d4b6a7cbf60e4 data\minecraft\tags\blocks\stairs.json
 4171c7606a07929cac06d447719855c42cee9f2e data\minecraft\tags\blocks\wooden_stairs.json
-0b1bf60aa4528376547f829e57f98d9f2e4b15ee data\minecraft\tags\blocks\slabs.json
+297f3ce30bd1f6fd2fca240ca8eea7dcbbbf52c4 data\minecraft\tags\blocks\mineable\shovel.json
 3f130ccbc4b416b1458eab879e98a29af126f6dc data\minecraft\tags\blocks\wooden_pressure_plates.json
+0b1bf60aa4528376547f829e57f98d9f2e4b15ee data\minecraft\tags\blocks\slabs.json
+6ffc545750e5cee9ea79634bb91b823bed7423b6 data\minecraft\tags\blocks\leaves.json
 469ec46842c29b73e1df02f38e759941740fddc2 data\minecraft\tags\blocks\planks.json
+66f01d042bed0136c3185e6043e2448911c1295f data\minecraft\tags\blocks\needs_diamond_tool.json
