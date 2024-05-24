@@ -101,7 +101,7 @@
   "item.enhanced_end.cooked_ender_bull": "Cooked Ender Bull",
   "item.enhanced_end.eneria_speck": "Eneria Speck",
 
-  "item.enhanced_end.reinforced_shard": "Reinforced Shard",
+  "item.enhanced_end.reinforced_obsidian_shard": "Reinforced Obsidian Shard",
   "item.enhanced_end.reinforced_nether_star": "Reinforced Nether Star",
   "item.enhanced_end.ender_bull_hide": "Ender Bull Hide",
   "item.enhanced_end.sentry_disk": "Sentry Disk",
@@ -196,6 +196,8 @@
   "block.enhanced_end.polished_kimberlite_brick_wall": "Polished Kimberlite Brick Wall",
 
   "block.enhanced_end.infused_kimberlite": "Infused Kimberlite",
+
+  "block.enhanced_end.reinforced_obsidian": "Reinforced Obsidian",
 
 
   "block.enhanced_end.laristone": "Laristone",

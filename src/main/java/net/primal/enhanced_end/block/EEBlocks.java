@@ -545,17 +545,26 @@ public class EEBlocks {
                     .strength(50f, 1200f)
                     .sounds(BlockSoundGroup.NETHERITE)));
 
-    //Plant Blocks
+    //Reinforced Obsidian
+    public static final Block REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian",
+            new Block(FabricBlockSettings.copy(Blocks.OBSIDIAN)
+                    .mapColor(MapColor.PALE_PURPLE)
+                    .requiresTool()
+                    .strength(100f, 2200f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    //Mushrooms
     /*public static final Block MIDNIGHT_MUSHROOM = registerBlock("midnight_mushroom",
-            new SaplingBlock(new AutumnMapleSaplingGenerator(),
+            new SaplingBlock(new SaplingGenerator(),
                     FabricBlockSettings.copyOf(Blocks.CRIMSON_FUNGUS)
                             .mapColor(MapColor.TERRACOTTA_ORANGE)
                             .sounds(BlockSoundGroup.FUNGUS)));
     public static final Block CORLITE_MUSHROOM = registerBlock("corlite_mushroom",
-            new SaplingBlock(new SaplingGeneratoR(),
+            new SaplingBlock(new SaplingGenerator(),
                     FabricBlockSettings.copyOf(Blocks.CRIMSON_FUNGUS)
                             .mapColor(MapColor.TERRACOTTA_ORANGE)
                             .sounds(BlockSoundGroup.FUNGUS)));*/
+
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(EnhancedEnd.MOD_ID, name),

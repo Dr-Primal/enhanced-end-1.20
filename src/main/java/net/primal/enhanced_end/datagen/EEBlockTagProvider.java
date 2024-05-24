@@ -2,6 +2,7 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.primal.enhanced_end.block.EEBlocks;
@@ -133,7 +134,66 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(EEBlocks.RAW_TANZANITE_BLOCK)
                 .add(EEBlocks.TANZANITE_BLOCK)
                 .add(EEBlocks.CLITANIUM_BLOCK)
+                .add(EEBlocks.ENDIMINTIUM_BLOCK)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.SNAPS_GOAT_HORN)
+                .add(EEBlocks.KIMBERLITE)
+                .add(EEBlocks.KIMBERLITE_STAIRS)
+                .add(EEBlocks.KIMBERLITE_SLAB)
+                .add(EEBlocks.KIMBERLITE_BUTTON)
+                .add(EEBlocks.KIMBERLITE_PRESSURE_PLATE)
+                .add(EEBlocks.POLISHED_KIMBERLITE)
+                .add(EEBlocks.POLISHED_KIMBERLITE_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_WALL)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICKS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_STAIRS)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_SLAB)
+                .add(EEBlocks.POLISHED_KIMBERLITE_BRICK_WALL)
+                .add(EEBlocks.POLISHED_KIMBERLITE_PILLAR)
+                .add(EEBlocks.LARISTONE)
+                .add(EEBlocks.LARISTONE_STAIRS)
+                .add(EEBlocks.LARISTONE_SLAB)
+                .add(EEBlocks.LARISTONE_WALL)
+                .add(EEBlocks.LARISTONE_BUTTON)
+                .add(EEBlocks.LARISTONE_PRESSURE_PLATE)
+                .add(EEBlocks.LARISTONE_BRICKS)
+                .add(EEBlocks.LARISTONE_BRICK_STAIRS)
+                .add(EEBlocks.LARISTONE_BRICK_SLAB)
+                .add(EEBlocks.LARISTONE_BRICK_WALL)
+                .add(EEBlocks.SILTSTONE)
+                .add(EEBlocks.SILTSTONE_STAIRS)
+                .add(EEBlocks.SILTSTONE_SLAB)
+                .add(EEBlocks.SILTSTONE_BUTTON)
+                .add(EEBlocks.SILTSTONE_PRESSURE_PLATE)
+                .add(EEBlocks.COBBLED_SILTSTONE)
+                .add(EEBlocks.COBBLED_SILTSTONE_STAIRS)
+                .add(EEBlocks.COBBLED_SILTSTONE_SLAB)
+                .add(EEBlocks.COBBLED_SILTSTONE_WALL)
+                .add(EEBlocks.SILTSTONE_BRICKS)
+                .add(EEBlocks.SILTSTONE_BRICK_STAIRS)
+                .add(EEBlocks.SILTSTONE_BRICK_SLAB)
+                .add(EEBlocks.SILTSTONE_BRICK_WALL)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
+                .add(EEBlocks.CLITANIUM_BLOCK)
                 .add(EEBlocks.ENDIMINTIUM_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.WITHER_IMMUNE)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_END)
+                .add(Blocks.OBSIDIAN)
+                .add(Blocks.BEDROCK)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.PIGLIN_REPELLENTS)
+                .add(EEBlocks.REINFORCED_OBSIDIAN);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
         .add(EEBlocks.ENDIMINTIUM_BLOCK);

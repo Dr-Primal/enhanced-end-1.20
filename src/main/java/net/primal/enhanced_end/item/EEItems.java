@@ -1,6 +1,7 @@
 package net.primal.enhanced_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -183,10 +184,18 @@ public class EEItems {
                             .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 50, 0), 0.2f)
                             .build())));
 
-    /*private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add();
+    //Reinforced Obsidian Shard
+    public static final Item REINFORCED_OBSIDIAN_SHARD = registerItem("reinforced_obsidian_shard",
+            new Item(new FabricItemSettings()));
 
-    }*/
+    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+        entries.add(EEItems.DIAMOND_FRAGMENT);
+        entries.add(EEItems.RAW_TANZANITE);
+        entries.add(EEItems.TANZANITE);
+        entries.add(EEItems.CLITANIUM);
+        entries.add(EEItems.ENDIMINTIUM_SCRAP);
+        entries.add(EEItems.ENDIMINTIUM_INGOT);
+    }
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(EnhancedEnd.MOD_ID, name), item);

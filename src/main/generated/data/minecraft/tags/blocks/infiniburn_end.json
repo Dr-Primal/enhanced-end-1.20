@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:bedrock",
+    "enhanced_end:reinforced_obsidian"
+  ]
+}

@@ -123,5 +123,7 @@ public class EELootTableProvider extends FabricBlockLootTableProvider {
         addDrop(EEBlocks.TANZANITE_BLOCK);
         addDrop(EEBlocks.CLITANIUM_BLOCK);
         addDrop(EEBlocks.ENDIMINTIUM_BLOCK);
+
+        addDrop(EEBlocks.REINFORCED_OBSIDIAN);
     }
 }

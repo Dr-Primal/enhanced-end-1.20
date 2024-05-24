@@ -336,6 +336,19 @@ public class EERecipeProvider extends FabricRecipeProvider {
 
         offerSmithingTemplateCopyingRecipe(exporter, EEItems.ENDIMINTIUM_UPGRADE_SMITHING_TEMPLATE, Blocks.END_STONE);
 
+        //Reinforced Obsidian
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, EEBlocks.REINFORCED_OBSIDIAN, 1)
+                .pattern(" S ")
+                .pattern("SOS")
+                .pattern(" S ")
+                .input('S', EEItems.REINFORCED_OBSIDIAN_SHARD)
+                .input('O', Blocks.OBSIDIAN)
+                .criterion(hasItem(EEItems.REINFORCED_OBSIDIAN_SHARD),
+                        conditionsFromItem(EEItems.REINFORCED_OBSIDIAN_SHARD))
+                .criterion(hasItem(Blocks.OBSIDIAN),
+                        conditionsFromItem(Blocks.OBSIDIAN))
+                .offerTo(exporter, new Identifier(getRecipeName(EEBlocks.REINFORCED_OBSIDIAN)));
+
         //Ore Blocks
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.RAW_TANZANITE, RecipeCategory.DECORATIONS, EEBlocks.RAW_TANZANITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, EEItems.TANZANITE, RecipeCategory.DECORATIONS, EEBlocks.TANZANITE_BLOCK);

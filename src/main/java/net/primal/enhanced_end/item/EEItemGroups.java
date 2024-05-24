@@ -14,7 +14,7 @@ public class EEItemGroups {
         public static final ItemGroup OUTER_WORLD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
                 new Identifier(EnhancedEnd.MOD_ID, "enhanced_end_blocks"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.enhanced_end_blocks"))
-                        .icon(() -> new ItemStack(EEBlocks.MIDNIGHT_STEM)).entries((displayContext, entries) -> {
+                        .icon(() -> new ItemStack(EEBlocks.ENDIMINTIUM_BLOCK)).entries((displayContext, entries) -> {
                             entries.add(EEBlocks.MIDNIGHT_STEM);
                             entries.add(EEBlocks.MIDNIGHT_HYPHAE);
                             entries.add(EEBlocks.STRIPPED_MIDNIGHT_STEM);
@@ -98,6 +98,8 @@ public class EEItemGroups {
                             entries.add(EEBlocks.CLITANIUM_BLOCK);
                             entries.add(EEBlocks.ENDIMINTIUM_BLOCK);
 
+                            entries.add(EEBlocks.REINFORCED_OBSIDIAN);
+
 
                             entries.add(EEBlocks.MIDNIGHT_NYLIUM);
                             entries.add(EEBlocks.CORLITE_NYLIUM);
@@ -112,7 +114,8 @@ public class EEItemGroups {
         public static final ItemGroup OUTER_WORLD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
                 new Identifier(EnhancedEnd.MOD_ID, "enhanced_end_items"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.enhanced_end_items"))
-                        .icon(() -> new ItemStack(EEItems.CLITANIUM)).entries((displayContext, entries) -> {
+                        .icon(() -> new ItemStack(EEItems.ENDIMINTIUM_INGOT)).entries((displayContext, entries) -> {
+                            entries.add(EEItems.REINFORCED_OBSIDIAN_SHARD);
                             entries.add(EEItems.CLITANIUM);
                             entries.add(EEItems.CLITANIUM_SWORD);
                             entries.add(EEItems.CLITANIUM_PICKAXE);

@@ -105,6 +105,9 @@ public class EEModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.TANZANITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.CLITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.ENDIMINTIUM_BLOCK);
+
+        //Reinforced Obsidian
+        blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.REINFORCED_OBSIDIAN);
     }
 
     @Override
@@ -146,5 +149,8 @@ public class EEModelProvider extends FabricModelProvider {
         itemModelGenerator.register(EEItems.CORRUPTED_BEETROOT, Models.GENERATED);
         itemModelGenerator.register(EEItems.RAW_ENDER_BULL, Models.GENERATED);
         itemModelGenerator.register(EEItems.COOKED_ENDER_BULL, Models.GENERATED);
+
+        //Reinforced Obsidian Shard
+        itemModelGenerator.register(EEItems.REINFORCED_OBSIDIAN_SHARD, Models.GENERATED);
     }
 }

@@ -194,6 +194,13 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
         getOrCreateTagBuilder(ItemTags.SAND)
                 .add(EEBlocks.ENDIUM_SOIL.asItem());
 
+        getOrCreateTagBuilder(ItemTags.PIGLIN_REPELLENTS)
+                .add(EEBlocks.REINFORCED_OBSIDIAN.asItem());
+
+        getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
+                .add(EEItems.CLITANIUM)
+                .add(EEItems.ENDIMINTIUM_INGOT);
+
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.ITEM, new Identifier("fabric", "iron_ingots")))
                 .add(EEItems.CLITANIUM);
 
