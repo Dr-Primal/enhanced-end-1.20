@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 
 @Mixin(InGameHud.class)
-public class AdosisHeartsMixin {
+public class AcidosisHeartsMixin {
     @Unique private static final Identifier ACIDOSIS_HEARTS = new Identifier(EnhancedEnd.MOD_ID, "textures/gui/acidosis_hearts.png");
 
     @Inject(method = "drawHeart", at = @At("HEAD"), cancellable = true)

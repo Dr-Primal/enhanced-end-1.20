@@ -150,7 +150,10 @@ public class EEModelProvider extends FabricModelProvider {
         itemModelGenerator.register(EEItems.RAW_ENDER_BULL, Models.GENERATED);
         itemModelGenerator.register(EEItems.COOKED_ENDER_BULL, Models.GENERATED);
 
-        //Reinforced Obsidian Shard
+        //Misc
         itemModelGenerator.register(EEItems.REINFORCED_OBSIDIAN_SHARD, Models.GENERATED);
+        itemModelGenerator.register(EEItems.SENTRY_DISK, Models.GENERATED);
+        itemModelGenerator.register(EEItems.SHADOW_SHARD, Models.GENERATED);
+        itemModelGenerator.register(EEItems.ENHANCED_PEARL, Models.GENERATED);
     }
 }

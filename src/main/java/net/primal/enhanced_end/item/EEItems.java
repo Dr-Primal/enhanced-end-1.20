@@ -11,7 +11,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.primal.enhanced_end.EnhancedEnd;
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.item.custom.BlindDiskItem;
 import net.primal.enhanced_end.item.custom.EndimintiumSmithingTemplateItem;
+import net.primal.enhanced_end.item.custom.EnhancedPearlItem;
 
 public class EEItems {
     public static final Item MIDNIGHT_SIGN = registerItem("midnight_sign",
@@ -187,6 +189,18 @@ public class EEItems {
     //Reinforced Obsidian Shard
     public static final Item REINFORCED_OBSIDIAN_SHARD = registerItem("reinforced_obsidian_shard",
             new Item(new FabricItemSettings()));
+
+    //Sentry Disk
+    public static final Item SENTRY_DISK = registerItem("sentry_disk",
+            new BlindDiskItem(new FabricItemSettings()));
+
+    //Shadow Fragment
+    public static final Item SHADOW_SHARD = registerItem("shadow_shard",
+            new Item(new FabricItemSettings()));
+
+    //Enhanced Pearl Item
+    public static final Item ENHANCED_PEARL = registerItem("enhanced_pearl",
+            new EnhancedPearlItem(new FabricItemSettings().maxCount(16)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(EEItems.DIAMOND_FRAGMENT);

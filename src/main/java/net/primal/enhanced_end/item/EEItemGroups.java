@@ -116,6 +116,9 @@ public class EEItemGroups {
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.enhanced_end_items"))
                         .icon(() -> new ItemStack(EEItems.ENDIMINTIUM_INGOT)).entries((displayContext, entries) -> {
                             entries.add(EEItems.REINFORCED_OBSIDIAN_SHARD);
+                            entries.add(EEItems.SHADOW_SHARD);
+                            entries.add(EEItems.SENTRY_DISK);
+                            entries.add(EEItems.ENHANCED_PEARL);
                             entries.add(EEItems.CLITANIUM);
                             entries.add(EEItems.CLITANIUM_SWORD);
                             entries.add(EEItems.CLITANIUM_PICKAXE);

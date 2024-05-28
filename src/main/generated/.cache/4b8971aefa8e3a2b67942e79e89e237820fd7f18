@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-27T15:09:42.6575509	Enhanced End/Block Loot Tables
+// 1.20.1	2024-05-28T00:45:28.4275151	Enhanced End/Block Loot Tables
 f4f81cacd18beb52c5eb6c3746764e20c76bd32f data\enhanced_end\loot_tables\blocks\corlite_slab.json
 8143a7a4dcc6af83680c0a841e160935ba16907a data\enhanced_end\loot_tables\blocks\midnight_hyphae.json
 e53be2d62edd8d24ab9ec3def65a7c14c7870d87 data\enhanced_end\loot_tables\blocks\midnight_stem.json
@@ -74,8 +74,8 @@ b0d0bbff26730194e5de39631ccb9c567318bc36 data\enhanced_end\loot_tables\blocks\st
 4a7c8691ce3a998f0dbbdbe70fff3d0234e8e9ee data\enhanced_end\loot_tables\blocks\corlite_nylium.json
 24fc246513accb4fa297dec6675e1109dfc12b56 data\enhanced_end\loot_tables\blocks\midnight_planks.json
 3788c34a92b156f90a82a082dfd83573cbdfa5e6 data\enhanced_end\loot_tables\blocks\polished_kimberlite.json
-c3e4cc10250f23ca1be4efbe08921573205b1514 data\enhanced_end\loot_tables\blocks\midnight_mushroom_cap.json
 aa8df3fcaa0f72a4f486ff53c67420e44c2cd470 data\enhanced_end\loot_tables\blocks\end_tanzanite_ore.json
+c3e4cc10250f23ca1be4efbe08921573205b1514 data\enhanced_end\loot_tables\blocks\midnight_mushroom_cap.json
 c7a038b1e85bffc4e16b44c25a2fd2e3e0faea1b data\enhanced_end\loot_tables\blocks\corlite_stem.json
 0fafedb7f2b6f7acd90af99f4a3e92b3b65e8196 data\enhanced_end\loot_tables\blocks\midnight_stairs.json
 6d42ad8e943e4429788aae7485c0ffdb93f4dfaf data\enhanced_end\loot_tables\blocks\polished_kimberlite_brick_slab.json
