@@ -248,6 +248,7 @@
 
 
   "itemgroup.enhanced_end_blocks": "Enhanced End Blocks",
-  "itemgroup.enhanced_end_items": "Enhanced End Items"
+  "itemgroup.enhanced_end_items": "Enhanced End Items",
 
+  "effect.enhanced_end.acidosis": "Acidosis"
 }

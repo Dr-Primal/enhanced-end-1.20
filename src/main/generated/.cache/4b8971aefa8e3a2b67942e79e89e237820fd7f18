@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-24T17:00:27.1086556	Enhanced End/Block Loot Tables
+// 1.20.1	2024-05-27T15:09:42.6575509	Enhanced End/Block Loot Tables
 f4f81cacd18beb52c5eb6c3746764e20c76bd32f data\enhanced_end\loot_tables\blocks\corlite_slab.json
 8143a7a4dcc6af83680c0a841e160935ba16907a data\enhanced_end\loot_tables\blocks\midnight_hyphae.json
 e53be2d62edd8d24ab9ec3def65a7c14c7870d87 data\enhanced_end\loot_tables\blocks\midnight_stem.json
@@ -57,8 +57,8 @@ b119ae7d1051479d5bdabe22c3e7b4c9c7963d6c data\enhanced_end\loot_tables\blocks\en
 44275f9b46d8002f49ac4aaeaef88e615f060f43 data\enhanced_end\loot_tables\blocks\laristone.json
 be890e9bc107789310785a4a23dc315334bc4a91 data\enhanced_end\loot_tables\blocks\kimberlite_stairs.json
 443aa3a83dcee3eaff76503d089a35153831d8e5 data\enhanced_end\loot_tables\blocks\laristone_wall.json
-ce89de8672c8d5682455a28aac0d78fee114902d data\enhanced_end\loot_tables\blocks\siltstone_button.json
 322603525f238d58bc754137e8c4e587512e3db0 data\enhanced_end\loot_tables\blocks\laristone_pressure_plate.json
+ce89de8672c8d5682455a28aac0d78fee114902d data\enhanced_end\loot_tables\blocks\siltstone_button.json
 a93c2933d7005b0731f14a40ff81f8184723b871 data\enhanced_end\loot_tables\blocks\kimberlite_pressure_plate.json
 3b5c4d12482d3120000e4014e63b3e9d193794ac data\enhanced_end\loot_tables\blocks\corlite_button.json
 82cd331db41779e8282cf3ea4b822f5f3548bff3 data\enhanced_end\loot_tables\blocks\laristone_stairs.json

@@ -3,6 +3,7 @@ package net.primal.enhanced_end;
 import net.fabricmc.api.ModInitializer;
 
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.effect.EEEffects;
 import net.primal.enhanced_end.item.EEItemGroups;
 import net.primal.enhanced_end.item.EEItems;
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class EnhancedEnd implements ModInitializer {
 		EEItems.registerEEItems();
 		EEBlocks.registerEEBlocks();
 		EEItemGroups.registerItemGroups();
+		EEEffects.registerEffects();
 		//EERegistries.eeRegistry();
 		//EEFluids.register();
 		//EEWorldGen.generateWorldGen();

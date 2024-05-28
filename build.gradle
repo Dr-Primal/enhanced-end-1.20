@@ -9,6 +9,9 @@ group = project.maven_group
 base {
 	archivesName = project.archives_base_name
 }
+loom {
+	accessWidenerPath = file("src/main/resources/enhanced_end.accesswidener")
+}
 
 repositories {
 	maven {

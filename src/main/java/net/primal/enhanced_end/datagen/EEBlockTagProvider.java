@@ -2,6 +2,7 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -254,5 +255,9 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
 
         getOrCreateTagBuilder(BlockTags.SMELTS_TO_GLASS)
                 .add(EEBlocks.ENDIUM_SOIL);
+
+        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
+                .add(Blocks.OBSIDIAN)
+                .add(Blocks.BEDROCK);
     }
 }

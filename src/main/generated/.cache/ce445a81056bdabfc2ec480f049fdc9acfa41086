@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-24T17:00:27.0926665	Enhanced End/Tags for minecraft:item
+// 1.20.1	2024-05-27T15:09:42.6485519	Enhanced End/Tags for minecraft:item
 309dea9977f8b150aa000a1d232f84883fc85731 data\minecraft\tags\items\stone_buttons.json
 87661255e6a6e4ff80d638df69bd411bb8cf5792 data\minecraft\tags\items\stone_tool_materials.json
 92cb2c3eb24878bb9ce69cd6aed0e450349b8d89 data\minecraft\tags\items\piglin_repellents.json
@@ -13,8 +13,8 @@ f059593a5ffd4a191f4c0f8f075372ae4408f5e8 data\minecraft\tags\items\wooden_slabs.
 1db4f3fbf3a786b9f3d6f9d3067586351a209cc4 data\enhanced_end\tags\items\midnight_stems.json
 92e0c8153389a22c14df5c4423b8732ddd255c62 data\minecraft\tags\items\hoes.json
 e758dbf619ec30274d17c3628abe978e4f8474a8 data\minecraft\tags\items\wooden_fences.json
-91210669bb350388ad270ed1fe9d4b6a7cbf60e4 data\minecraft\tags\items\stairs.json
 76b8c50b01e7ec4310eca9936109793acbe2d24c data\minecraft\tags\items\hanging_signs.json
+91210669bb350388ad270ed1fe9d4b6a7cbf60e4 data\minecraft\tags\items\stairs.json
 e489470d7638c135149234b66f5ec680eef1b16a data\minecraft\tags\items\trimmable_armor.json
 5d1667b9f5cff87581ad4c2654a6ff4d78be6d7c data\minecraft\tags\items\beacon_payment_items.json
 43cccfa25cd9e2a55a2f544d2fdb8b7a2e4256db data\minecraft\tags\items\leaves.json
@@ -25,9 +25,9 @@ e489470d7638c135149234b66f5ec680eef1b16a data\minecraft\tags\items\trimmable_arm
 b8db7a6e1fdb40dea64ba9f58c5beb3879aa0518 data\minecraft\tags\items\shovels.json
 7f3b495f05ca4ce697e52643e8aa836eba82080d data\minecraft\tags\items\swords.json
 b1587e4532b60645598bceb29351812731c4658e data\minecraft\tags\items\axes.json
-9f157f9edcd2fef3fae4d5f156106f369377d536 data\minecraft\tags\items\completes_find_tree_tutorial.json
 70567e1544b3cf826be54d5bfb17f768cdae5b88 data\enhanced_end\tags\items\corlite_stems.json
+9f157f9edcd2fef3fae4d5f156106f369377d536 data\minecraft\tags\items\completes_find_tree_tutorial.json
 902c9a93d20b59e2159c34ccc80873bcd857af65 data\minecraft\tags\items\wooden_trapdoors.json
-34b1ba00fa7af8179fd7574e7157b25516b4247d data\minecraft\tags\items\walls.json
 87661255e6a6e4ff80d638df69bd411bb8cf5792 data\minecraft\tags\items\stone_crafting_materials.json
+34b1ba00fa7af8179fd7574e7157b25516b4247d data\minecraft\tags\items\walls.json
 acb1a5549fc7228948b977cef4e913c793a0cf5f data\minecraft\tags\items\non_flammable_wood.json

@@ -5,7 +5,7 @@
 	"name": "Enhanced End",
 	"description": "Adds Enhancements to the End Dimension to spice up your world in a vanilla friendly way!",
 	"authors": [
-		"Me!"
+		"Primal!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -28,6 +28,7 @@
 	"mixins": [
 		"enhanced_end.mixins.json"
 	],
+	"accessWidener": "enhanced_end.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.15.3",
 		"minecraft": "~1.20.1",

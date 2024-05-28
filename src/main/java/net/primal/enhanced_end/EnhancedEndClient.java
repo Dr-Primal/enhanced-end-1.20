@@ -34,6 +34,7 @@ public class EnhancedEndClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE,
                         EEBlocks.CORLITE_HANGING_SIGN_TEXTURE));
+
         System.out.println("Initializing Enhanced End On the Client Side!");
     }
 }
