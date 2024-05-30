@@ -9,6 +9,9 @@ import net.primal.enhanced_end.EnhancedEnd;
 
 public class EETags {
     public static class Blocks {
+        public static final TagKey<Block> DRAGON_FIRE_BASE_BLOCKS =
+                createTag("dragon_fire_base_blocks");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(EnhancedEnd.MOD_ID, name));
         }
@@ -20,6 +23,10 @@ public class EETags {
 
         public static final TagKey<Item> CORLITE_STEMS =
                 createTag("corlite_stems");
+
+        public static final TagKey<Item> DRAGON_FIRE_BASE_BLOCKS =
+                createTag("dragon_fire_base_blocks");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(EnhancedEnd.MOD_ID, name));
         }

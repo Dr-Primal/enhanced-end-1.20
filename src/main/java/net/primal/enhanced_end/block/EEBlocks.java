@@ -7,6 +7,7 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
@@ -17,6 +18,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.primal.enhanced_end.EnhancedEnd;
+import net.primal.enhanced_end.block.custom.DragonFireBlock;
 import net.primal.enhanced_end.block.custom.EENyliumBlock;
 
 public class EEBlocks {
@@ -553,6 +555,19 @@ public class EEBlocks {
                     .strength(100f, 2200f)
                     .sounds(BlockSoundGroup.STONE)));
 
+    //Dragon Fire
+
+    public static final Block DRAGON_FIRE = registerBlockWithoutItem("dragon_fire",
+            new DragonFireBlock(FabricBlockSettings.create()
+                    .mapColor(MapColor.PURPLE)
+                    .replaceable()
+                    .noCollision()
+                    .breakInstantly()
+                    .luminance(state -> 15)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+
     //Mushrooms
     /*public static final Block MIDNIGHT_MUSHROOM = registerBlock("midnight_mushroom",
             new SaplingBlock(new SaplingGenerator(),
@@ -569,6 +584,10 @@ public class EEBlocks {
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(EnhancedEnd.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(EnhancedEnd.MOD_ID, name), block);
     }
 
     public static void registerEEBlocks() {

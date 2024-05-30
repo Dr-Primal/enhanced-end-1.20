@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.primal.enhanced_end.block.EEBlocks;
+import net.primal.enhanced_end.util.EETags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -191,6 +192,7 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.INFINIBURN_END)
                 .add(Blocks.OBSIDIAN)
                 .add(Blocks.BEDROCK)
+                .add(Blocks.END_STONE)
                 .add(EEBlocks.REINFORCED_OBSIDIAN);
 
         getOrCreateTagBuilder(BlockTags.PIGLIN_REPELLENTS)
@@ -256,8 +258,15 @@ public class EEBlockTagProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(BlockTags.SMELTS_TO_GLASS)
                 .add(EEBlocks.ENDIUM_SOIL);
 
-        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
-                .add(Blocks.OBSIDIAN)
+        getOrCreateTagBuilder(EETags.Blocks.DRAGON_FIRE_BASE_BLOCKS)
+                .add(Blocks.END_STONE)
+                .add(Blocks.END_STONE_BRICKS)
+                .add(Blocks.END_STONE_BRICK_SLAB)
+                .add(Blocks.END_STONE_BRICK_STAIRS)
+                .add(Blocks.END_STONE_BRICK_WALL)
                 .add(Blocks.BEDROCK);
+
+        getOrCreateTagBuilder(BlockTags.FIRE)
+                .add(EEBlocks.DRAGON_FIRE);
     }
 }

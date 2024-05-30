@@ -3,7 +3,6 @@ package net.primal.enhanced_end.entity.projectile.thrown;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
@@ -13,15 +12,13 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
-import net.primal.enhanced_end.item.EEItems;
 import org.jetbrains.annotations.Nullable;
 
-public class EnhancedPearlEntity
+public class CustomPearlEntity
         extends ThrownItemEntity {
 
-    public EnhancedPearlEntity(World world, LivingEntity owner) {
+    public CustomPearlEntity(World world, LivingEntity owner) {
         super(EntityType.ENDER_PEARL, owner, world);
     }
 

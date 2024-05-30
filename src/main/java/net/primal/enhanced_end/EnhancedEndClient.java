@@ -20,6 +20,8 @@ public class EnhancedEndClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EEBlocks.CORLITE_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EEBlocks.CORLITE_TRAPDOOR, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(EEBlocks.DRAGON_FIRE, RenderLayer.getCutout());
+
         StrippableBlockRegistry.register(EEBlocks.MIDNIGHT_STEM, EEBlocks.STRIPPED_MIDNIGHT_STEM);
         StrippableBlockRegistry.register(EEBlocks.MIDNIGHT_HYPHAE, EEBlocks.STRIPPED_MIDNIGHT_HYPHAE);
         StrippableBlockRegistry.register(EEBlocks.CORLITE_STEM, EEBlocks.STRIPPED_CORLITE_STEM);

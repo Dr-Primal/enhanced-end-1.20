@@ -119,6 +119,8 @@ public class EEItemGroups {
                             entries.add(EEItems.SHADOW_SHARD);
                             entries.add(EEItems.SENTRY_DISK);
                             entries.add(EEItems.ENHANCED_PEARL);
+                            entries.add(EEItems.PHANTOM_PEARL);
+                            entries.add(EEItems.PHANTOM_EYE);
                             entries.add(EEItems.CLITANIUM);
                             entries.add(EEItems.CLITANIUM_SWORD);
                             entries.add(EEItems.CLITANIUM_PICKAXE);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fire_floor",
+  "textures": {
+    "fire": "enhanced_end:block/dragon_fire_0"
+  }
+}

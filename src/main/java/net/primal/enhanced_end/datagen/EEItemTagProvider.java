@@ -2,6 +2,7 @@ package net.primal.enhanced_end.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -200,6 +201,14 @@ public class EEItemTagProvider extends FabricTagProvider.ItemTagProvider{
         getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(EEItems.CLITANIUM)
                 .add(EEItems.ENDIMINTIUM_INGOT);
+
+        getOrCreateTagBuilder(EETags.Items.DRAGON_FIRE_BASE_BLOCKS)
+                .add(Blocks.BEDROCK.asItem())
+                .add(Blocks.END_STONE.asItem())
+                .add(Blocks.END_STONE_BRICKS.asItem())
+                .add(Blocks.END_STONE_BRICK_SLAB.asItem())
+                .add(Blocks.END_STONE_BRICK_STAIRS.asItem())
+                .add(Blocks.END_STONE_BRICK_WALL.asItem());
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.ITEM, new Identifier("fabric", "iron_ingots")))
                 .add(EEItems.CLITANIUM);

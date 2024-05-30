@@ -3,6 +3,7 @@
   "values": [
     "minecraft:obsidian",
     "minecraft:bedrock",
+    "minecraft:end_stone",
     "enhanced_end:reinforced_obsidian"
   ]
 }

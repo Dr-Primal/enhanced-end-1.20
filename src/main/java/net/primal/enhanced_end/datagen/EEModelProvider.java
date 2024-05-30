@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.EEItems;
+
+import java.util.List;
 
 public class EEModelProvider extends FabricModelProvider {
     public EEModelProvider(FabricDataOutput output) {
@@ -108,6 +111,16 @@ public class EEModelProvider extends FabricModelProvider {
 
         //Reinforced Obsidian
         blockStateModelGenerator.registerSimpleCubeAll(EEBlocks.REINFORCED_OBSIDIAN);
+
+        //Dragon Fire
+        List<Identifier> list = blockStateModelGenerator.getFireFloorModels(EEBlocks.DRAGON_FIRE);
+        List<Identifier> list2 = blockStateModelGenerator.getFireSideModels(EEBlocks.DRAGON_FIRE);
+        blockStateModelGenerator.blockStateCollector.accept(MultipartBlockStateSupplier.create(EEBlocks.DRAGON_FIRE)
+                .with(BlockStateModelGenerator.buildBlockStateVariants(list, blockStateVariant -> blockStateVariant))
+                .with(BlockStateModelGenerator.buildBlockStateVariants(list2, blockStateVariant -> blockStateVariant))
+                .with(BlockStateModelGenerator.buildBlockStateVariants(list2, blockStateVariant -> blockStateVariant.put(VariantSettings.Y, VariantSettings.Rotation.R90)))
+                .with(BlockStateModelGenerator.buildBlockStateVariants(list2, blockStateVariant -> blockStateVariant.put(VariantSettings.Y, VariantSettings.Rotation.R180)))
+                .with(BlockStateModelGenerator.buildBlockStateVariants(list2, blockStateVariant -> blockStateVariant.put(VariantSettings.Y, VariantSettings.Rotation.R270))));
     }
 
     @Override
@@ -155,5 +168,7 @@ public class EEModelProvider extends FabricModelProvider {
         itemModelGenerator.register(EEItems.SENTRY_DISK, Models.GENERATED);
         itemModelGenerator.register(EEItems.SHADOW_SHARD, Models.GENERATED);
         itemModelGenerator.register(EEItems.ENHANCED_PEARL, Models.GENERATED);
+        itemModelGenerator.register(EEItems.PHANTOM_PEARL, Models.GENERATED);
+        itemModelGenerator.register(EEItems.PHANTOM_EYE, Models.GENERATED);
     }
 }

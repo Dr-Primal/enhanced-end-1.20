@@ -2,6 +2,7 @@ package net.primal.enhanced_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -13,7 +14,8 @@ import net.primal.enhanced_end.EnhancedEnd;
 import net.primal.enhanced_end.block.EEBlocks;
 import net.primal.enhanced_end.item.custom.BlindDiskItem;
 import net.primal.enhanced_end.item.custom.EndimintiumSmithingTemplateItem;
-import net.primal.enhanced_end.item.custom.EnhancedPearlItem;
+import net.primal.enhanced_end.item.custom.CustomPearlItem;
+import net.primal.enhanced_end.item.custom.PhantomEyeItem;
 
 public class EEItems {
     public static final Item MIDNIGHT_SIGN = registerItem("midnight_sign",
@@ -200,7 +202,13 @@ public class EEItems {
 
     //Enhanced Pearl Item
     public static final Item ENHANCED_PEARL = registerItem("enhanced_pearl",
-            new EnhancedPearlItem(new FabricItemSettings().maxCount(16)));
+            new CustomPearlItem(new FabricItemSettings().maxCount(16)));
+
+    public static final Item PHANTOM_PEARL = registerItem("phantom_pearl",
+            new CustomPearlItem(new FabricItemSettings().maxDamage(200).rarity(Rarity.EPIC)));
+
+    public static final Item PHANTOM_EYE = registerItem("phantom_eye",
+            new PhantomEyeItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(EEItems.DIAMOND_FRAGMENT);
@@ -218,7 +226,7 @@ public class EEItems {
     public static void registerEEItems() {
         EnhancedEnd.LOGGER.info("Registering Items for " + EnhancedEnd.MOD_ID);
 
-        /*ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register(EEItems::addItemsToIngredientItemGroup);*/
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register(EEItems::addItemsToIngredientItemGroup);
     }
 }
